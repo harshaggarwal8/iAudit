@@ -3,23 +3,26 @@
   <MonoDevelop.Ide.ItemProperties.iAudit.UITests FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/Views/AboutPage.xaml">
     <Files>
-      <File FileName="iAudit/Views/AboutPage.xaml" Line="1" Column="1" />
-      <File FileName="iAudit/Views/ItemsPage.xaml" Line="1" Column="1" />
-      <File FileName="iAudit/ViewModels/AboutViewModel.cs" Line="1" Column="1" />
-      <File FileName="iAudit/Views/AboutPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="iAudit/Views/AboutPage.xaml" Line="22" Column="37" />
+      <File FileName="iAudit/Views/ItemsPage.xaml" />
+      <File FileName="iAudit/ViewModels/AboutViewModel.cs" />
+      <File FileName="iAudit/Views/AboutPage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="iAudit" expanded="True">
-            <Node name="iAudit" expanded="True">
+            <Node name="iAudit" expanded="True" selected="True">
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="AboutPage.xaml" expanded="True" selected="True" />
+                <Node name="AboutPage.xaml" expanded="True" />
               </Node>
             </Node>
             <Node name="iAudit.Android" expanded="True">
               <Node name="Properties" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
             </Node>
             <Node name="iAudit.iOS" expanded="True" />
           </Node>
