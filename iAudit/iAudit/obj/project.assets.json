@@ -555,23 +555,23 @@
     ]
   },
   "packageFolders": {
-    "/Users/harshaggarwal/.nuget/packages/": {},
+    "/Users/sonialopez/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj",
+      "projectUniqueName": "/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/iAudit.csproj",
       "projectName": "iAudit",
-      "projectPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj",
-      "packagesPath": "/Users/harshaggarwal/.nuget/packages/",
-      "outputPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/",
+      "projectPath": "/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/iAudit.csproj",
+      "packagesPath": "/Users/sonialopez/.nuget/packages/",
+      "outputPath": "/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/harshaggarwal/.config/NuGet/NuGet.Config"
+        "/Users/sonialopez/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -609,16 +609,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }
