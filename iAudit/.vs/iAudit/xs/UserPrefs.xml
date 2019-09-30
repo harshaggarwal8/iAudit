@@ -1,36 +1,28 @@
-﻿<Properties StartupConfiguration="{B727C7AC-0318-4E31-8BB3-27366766BD59}|Default">
+﻿<Properties StartupConfiguration="{85BDDDE0-417B-4008-8BC5-A17B259615A3}|Default">
   <MonoDevelop.Ide.ItemProperties.iAudit.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.Pixel_2_API_28" />
   <MonoDevelop.Ide.ItemProperties.iAudit.UITests FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/Views/AboutPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/Views/NewItemPage.xaml.cs">
     <Files>
       <File FileName="iAudit/Views/AboutPage.xaml" Line="22" Column="37" />
       <File FileName="iAudit/Views/ItemsPage.xaml" />
       <File FileName="iAudit/ViewModels/AboutViewModel.cs" />
       <File FileName="iAudit/Views/AboutPage.xaml.cs" />
+      <File FileName="iAudit/Views/ItemsPage.xaml.cs" />
+      <File FileName="iAudit/Views/NewItemPage.xaml" />
+      <File FileName="iAudit/Views/NewItemPage.xaml.cs" Line="34" Column="40" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="iAudit" expanded="True">
-            <Node name="iAudit" expanded="True" selected="True">
-              <Node name="ViewModels" expanded="True" />
+            <Node name="iAudit" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="AboutPage.xaml" expanded="True" />
+                <Node name="NewItemPage.xaml" expanded="True">
+                  <Node name="NewItemPage.xaml.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
-            <Node name="iAudit.Android" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Resources" expanded="True">
-                <Node name="drawable" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="iAudit.iOS" expanded="True" />
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="iAudit" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
