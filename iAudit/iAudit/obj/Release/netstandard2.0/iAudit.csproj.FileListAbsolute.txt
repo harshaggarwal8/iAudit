@@ -14,3 +14,4 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.dll
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/ref/iAudit.dll
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.pdb
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.csprojAssemblyReference.cache

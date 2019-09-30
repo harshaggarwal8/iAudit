@@ -57,7 +57,6 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/mipmap-xxhdpi/launcher_foreground.png
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/mipmap-xxxhdpi/icon.png
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/mipmap-xxxhdpi/launcher_foreground.png
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/drawable/xamarin_logo.png
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/drawable/tab_about.png
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/drawable/tab_feed.png
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/uploadflags.txt
