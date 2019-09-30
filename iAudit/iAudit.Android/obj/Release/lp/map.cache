@@ -44,3 +44,6 @@ Xamarin.Forms.Platform.Android
 Xamarin.Forms.Platform
 Xamarin.Forms.Xaml
 netstandard
+SkiaSharp
+SkiaSharp.Views.Android
+SkiaSharp.Views.Forms
