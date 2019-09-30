@@ -3,7 +3,17 @@
     <StackLayout Spacing="20" Padding="15">
         <Label Text="Text:" FontSize="Medium" />
         <Label Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" />
+        <Label Text="January" FontSize="Medium" />
+        <Label Text="February" FontSize="Medium" />
+        <Label Text="March" FontSize="Medium" />
+        <Label Text="April" FontSize="Medium" />
+        <Label Text="May" FontSize="Medium" />
+        <Label Text="June" FontSize="Medium" />
+        <Label Text="July" FontSize="Medium" />
+        <Label Text="August" FontSize="Medium" />
+        <Label Text="September" FontSize="Medium" />
+        <Label Text="October" FontSize="Medium" />
+        <Label Text="November" FontSize="Medium" />
+        <Label Text="December" FontSize="Medium" />
     </StackLayout>
 </ContentPage>
