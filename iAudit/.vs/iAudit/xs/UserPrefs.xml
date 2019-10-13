@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{85BDDDE0-417B-4008-8BC5-A17B259615A3}|Default">
   <MonoDevelop.Ide.ItemProperties.iAudit.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_pie_9_0_api_28" />
-  <MonoDevelop.Ide.ItemProperties.iAudit.UITests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.iAudit.UITests FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/Views/ItemDetailPage.xaml.cs">
     <Files>
       <File FileName="iAudit/ViewModels/AboutViewModel.cs" Line="1" Column="1" />
-      <File FileName="iAudit/Views/NewItemPage.xaml.cs" Line="12" Column="31" />
-      <File FileName="iAudit/Activities/MainActivity.cs" Line="38" Column="1" />
-      <File FileName="iAudit/Views/ItemDetailPage.xaml" Line="3" Column="44" />
-      <File FileName="iAudit/Views/ItemsPage.xaml" Line="43" Column="26" />
-      <File FileName="iAudit/Views/ItemDetailPage.xaml.cs" Line="11" Column="3" />
+      <File FileName="iAudit/Views/NewItemPage.xaml.cs" />
+      <File FileName="iAudit/Views/ItemDetailPage.xaml" />
+      <File FileName="iAudit/Views/ItemsPage.xaml" />
+      <File FileName="iAudit/Views/ItemDetailPage.xaml.cs" Line="48" Column="51" />
+      <File FileName="iAudit/Views/NewItemPage.xaml" />
+      <File FileName="iAudit/AppShell.xaml" />
+      <File FileName="../../../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1824" Column="2" />
+      <File FileName="iAudit/ViewModels/ItemsViewModel.cs" Line="22" Column="46" />
+      <File FileName="iAudit/Services/MockDataStore.cs" Line="52" Column="28" />
+      <File FileName="iAudit/Views/ItemsPage.xaml.cs" Line="44" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,23 +21,34 @@
           <Node name="iAudit" expanded="True">
             <Node name="iAudit" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Microcharts.Forms" expanded="True" />
+                  <Node name="Microsoft.CodeAnalysis.FxCopAnalyzers" expanded="True" />
+                </Node>
               </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="ItemDetailPage.xaml" expanded="True">
                   <Node name="ItemDetailPage.xaml.cs" selected="True" />
                 </Node>
+                <Node name="ItemsPage.xaml" expanded="True" />
+                <Node name="NewItemPage.xaml" expanded="True" />
               </Node>
             </Node>
-            <Node name="iAudit.iOS" expanded="True" />
+            <Node name="iAudit.UITests" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.iAudit.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F37A9D10-71F8-4EA9-A371-7CB2D66E28DA" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

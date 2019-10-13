@@ -1,4 +1,8 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/iAudit.iOS.exe
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/Microcharts.Forms.dll
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/SkiaSharp.dll
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/SkiaSharp.Views.iOS.dll
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/SkiaSharp.Views.Forms.dll
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/Xamarin.Essentials.dll
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/Xamarin.Essentials.pdb
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/Xamarin.Forms.Core.dll
@@ -64,7 +68,3 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/obj/iPhoneSimulator/Release/XamlC.stamp
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/obj/iPhoneSimulator/Release/iAudit.iOS.csproj.CopyComplete
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/obj/iPhoneSimulator/Release/iAudit.iOS.exe
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/Microcharts.Forms.dll
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/SkiaSharp.dll
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/SkiaSharp.Views.iOS.dll
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/bin/iPhoneSimulator/Release/SkiaSharp.Views.Forms.dll
