@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="iAudit.Views.MonthsPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Button Text="January"/>
+            <Button Text="February"/>
+            <Button Text="March" />
+            <Button Text="April" />
+            <Button Text="May"/>
+            <Button Text="June"/>
+            <Button Text="July" />
+            <Button Text="August" />
+            <Button Text="September"/>
+            <Button Text="October"/>
+            <Button Text="November" />
+            <Button Text="December" />
+            <Button Text="View All" />
+        </StackLayout>        
+    </ContentPage.Content>
+</ContentPage>

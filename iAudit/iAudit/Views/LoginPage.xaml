@@ -7,13 +7,16 @@
              x:Class="iAudit.Views.LoginPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15" Orientation="Vertical">
-        <Entry Placeholder="enter email" />
-        <Entry Placeholder="enter password" />
-            <StackLayout Spacing="20" Padding="15" Orientation="Horizontal">
-            <Button Text="LOGIN" />
-            <Button Text="REGISTER" />
-            </StackLayout>
-    </StackLayout>
+        <StackLayout Orientation="Vertical" Margin="40" Padding="40">
+             <StackLayout Spacing="20" Padding="15" Orientation="Vertical">
+                <Image d:Resources="logo.png"/>
+                <Entry Placeholder="enter email" />
+                <Entry Placeholder="enter password" />
+                <StackLayout Spacing="20" Padding="15" Orientation="Horizontal">
+                    <Button Text="LOGIN" Clicked="LOGIN_Clicked"/>
+                    <Button Text="REGISTER" Clicked="REGISTER_Clicked"/>
+                </StackLayout>
+        </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

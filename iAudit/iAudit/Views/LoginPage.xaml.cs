@@ -21,15 +21,23 @@ namespace iAudit.Views
         public LoginPage()
         {
             InitializeComponent();
-            var item = new Item
-            {
-                Text = "Item 1",
-                Description = "This is an item description."
-            };
+        }
 
-            viewModel = new UserViewModel(item);
-            BindingContext = viewModel;
+        async void LOGIN_Clicked(object sender, EventArgs e)
+        {
+
+            //if accepted go here
+            await Navigation.PushAsync(new YearsPage());
+
+            //else make them fix
+        }
+
+        async void REGISTER_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RegisterPage());
         }
     }
 }
+
+
 

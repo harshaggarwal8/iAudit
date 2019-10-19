@@ -33,3 +33,7 @@
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.AssemblyInfo.cs
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/XamlC.stamp
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/LoginPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/MonthsPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/NewYearPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/RegisterPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/YearsPage.xaml.g.cs
