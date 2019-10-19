@@ -9,29 +9,27 @@ using iAudit.ViewModels;
 namespace iAudit.Views
 {
     [DesignTimeVisible(false)]
-    public partial class ItemDetailPage : ContentPage
+    public partial class LoginPage : ContentPage
     {
-        ItemDetailViewModel viewModel;
-
-        public ItemDetailPage(ItemDetailViewModel viewModel)
+        UserViewModel viewModel;
+        public LoginPage(UserViewModel viewModel)
         {
             InitializeComponent();
-
             BindingContext = this.viewModel = viewModel;
         }
 
-        public ItemDetailPage()
+        public LoginPage()
         {
             InitializeComponent();
-
             var item = new Item
             {
                 Text = "Item 1",
                 Description = "This is an item description."
             };
 
-            viewModel = new ItemDetailViewModel(item);
+            viewModel = new UserViewModel(item);
             BindingContext = viewModel;
         }
     }
 }
+
