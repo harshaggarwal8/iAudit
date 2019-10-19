@@ -343,20 +343,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/sonialopez/.nuget/packages/": {}
+    "/Users/harshaggarwal/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.UITests/iAudit.UITests.csproj",
+      "projectUniqueName": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.UITests/iAudit.UITests.csproj",
       "projectName": "iAudit.UITests",
-      "projectPath": "/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.UITests/iAudit.UITests.csproj",
-      "packagesPath": "/Users/sonialopez/.nuget/packages/",
-      "outputPath": "/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.UITests/obj/",
+      "projectPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.UITests/iAudit.UITests.csproj",
+      "packagesPath": "/Users/harshaggarwal/.nuget/packages/",
+      "outputPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.UITests/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/sonialopez/.config/NuGet/NuGet.Config"
+        "/Users/harshaggarwal/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net461"

@@ -866,3 +866,4 @@
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.Android/obj/Release/stamp/_GenerateJavaStubs.stamp
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.Android/obj/Release/stamp/_GeneratePackageManagerJava.stamp
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.Android/obj/Release/stamp/_ResolveLibraryProjectImports.stamp
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/drawable/logo.png

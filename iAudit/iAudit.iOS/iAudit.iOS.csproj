@@ -119,6 +119,10 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo.png" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-1.png" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -139,5 +143,8 @@
       <Project>{7D435235-95E1-484F-95BF-DC32213DCBC7}</Project>
       <Name>iAudit</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Splash.imageset\" />
   </ItemGroup>
 </Project>

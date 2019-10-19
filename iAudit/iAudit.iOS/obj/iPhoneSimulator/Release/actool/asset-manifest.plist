@@ -27,5 +27,46 @@
 			<string>/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/obj/iPhoneSimulator/Release/actool/partial-info.plist</string>
 		</array>
 	</dict>
+	<key>com.apple.actool.document.warnings</key>
+	<array>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./Splash.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/obj/iPhoneSimulator/Release/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "Splash" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+		<dict>
+			<key>affected-items</key>
+			<array>
+				<string>./Splash.imageset/[watch][][&lt;=145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][&lt;=145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][&gt;145][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][&gt;145][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][2x][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][2x][][][][][][][light][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][][][][][][][][dark][][][][2d][(null)]</string>
+				<string>./Splash.imageset/[watch][][][][][][][][][][light][][][][2d][(null)]</string>
+			</array>
+			<key>catalog</key>
+			<string>/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.iOS/obj/iPhoneSimulator/Release/actool/cloned-assets/Assets.xcassets</string>
+			<key>message</key>
+			<string>The image set "Splash" has 8 unassigned children.</string>
+			<key>type</key>
+			<string>Ambiguous Content</string>
+		</dict>
+	</array>
 </dict>
 </plist>
