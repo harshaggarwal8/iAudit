@@ -11,11 +11,13 @@ namespace iAudit.Views
     [DesignTimeVisible(false)]
     public partial class AddIncomePage : ContentPage
     {
+        
         public Income income { get; set; }
+        /*
         public AddIncomePage()
         {
             InitializeComponent();
-
+            //var _title = Title.Text;
             income = new Income
             {
                 Title = "Expense",
@@ -27,14 +29,14 @@ namespace iAudit.Views
 
             BindingContext = this;
         }
-
+        */
 		public AddIncomePage(Year year, String month)
 		{
-			InitializeComponent();
+            InitializeComponent();
 
             income = new Income
             {
-                Title = "Expense",
+                IncomeName = "Income",
                 Notes = "No Notes.",
                 Date = "MM-DD-YYYY",
                 Year = year,

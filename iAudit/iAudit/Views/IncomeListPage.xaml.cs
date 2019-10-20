@@ -48,7 +48,7 @@ namespace iAudit.Views
 
         async void AddIncome_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new AddIncomePage()));
+            await Navigation.PushModalAsync(new NavigationPage(new AddIncomePage(currentYear, currentMonth)));
         }
 
         protected override void OnAppearing()

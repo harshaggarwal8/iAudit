@@ -7,7 +7,7 @@ namespace iAudit.Models
     public class Income 
     {
         public string Id { get; set; }
-        public string Title { get; set; }
+        public string IncomeName { get; set; }
         public string Notes { get; set; }
         public double Amount { get; set; }
         public Year Year { get; set; }

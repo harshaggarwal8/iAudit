@@ -23,19 +23,19 @@
                   ItemSelected="OnItemSelected">
             <d:ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>First Item</x:String>
-                    <x:String>Second Item</x:String>
-                    <x:String>Third Item</x:String>
-                    <x:String>Fourth Item</x:String>
-                    <x:String>Fifth Item</x:String>
-                    <x:String>Sixth Item</x:String>
+                    <x:String>First Income</x:String>
+                    <x:String>Second Income</x:String>
+                    <x:String>Third Income</x:String>
+                    <x:String>Fourth Income</x:String>
+                    <x:String>Fifth Income</x:String>
+                    <x:String>Sixth Income</x:String>
                 </x:Array>
             </d:ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <StackLayout Padding="10">
-                            <Label Text="{Binding Title}"
+                            <Label Text="{Binding IncomeName}"
                                    d:Text="{Binding .}"
                                    LineBreakMode="NoWrap"
                                    Style="{DynamicResource ListItemTextStyle}"

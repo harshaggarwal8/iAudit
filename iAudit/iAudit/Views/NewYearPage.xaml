@@ -13,9 +13,9 @@
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
             <Label Text="Year Number" FontSize="Medium" />
-            <Entry Text="{Binding Year.Text}" d:Text="Year number" FontSize="Small" />
+            <Entry Text="{Binding Year.Text}" Placeholder="Year Number" d:Text="Year number" FontSize="Small" />
             <Label Text="Notes" FontSize="Medium" />
-            <Editor Text="{Binding Year.Description}" d:Text="Year notes" FontSize="Small" Margin="0" />
+            <Editor Text="{Binding Year.Description}" Placeholder="Notes" d:Text="Year notes" FontSize="Small" Margin="0" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
