@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="iAudit.Views.SelectPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="iAudit.Views.SelectPage">
     <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+            <Image Source="logo.png" WidthRequest="15" HeightRequest="15"/>
+            <Button Text="Add Income" Clicked="AddIncome_Clicked"/>
+            <Image Source="logo.png" WidthRequest="15" HeightRequest="15"/>
+            <Button Text="Add Expense" Clicked="AddExpense_Clicked"/>
+            <Image Source="logo.png" WidthRequest="15" HeightRequest="15"/>
+            <Button Text="View Report" Clicked="ViewReport_Clicked"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+

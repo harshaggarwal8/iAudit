@@ -54,7 +54,6 @@ namespace iAudit.Views
             await Navigation.PushAsync(new SelectPage(currentYear, "July"));
         }
 
-
         async void Aug_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SelectPage(currentYear, "August"));

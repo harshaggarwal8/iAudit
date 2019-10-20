@@ -9,9 +9,9 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" Margin="40" Padding="40">
              <StackLayout Spacing="20" Padding="15" Orientation="Vertical">
-                <Image d:Resources="logo.png"/>
+                <Image Source="logo.png" WidthRequest="30" HeightRequest="30"/>
                 <Entry Placeholder="enter email" />
-                <Entry Placeholder="enter password" />
+                <Entry Placeholder="enter password" IsPassword="True" />
                 <StackLayout Spacing="20" Padding="15" Orientation="Horizontal">
                     <Button Text="LOGIN" Clicked="LOGIN_Clicked"/>
                     <Button Text="REGISTER" Clicked="REGISTER_Clicked"/>
