@@ -7,19 +7,33 @@ namespace iAudit.Views
 {
     public partial class SelectPage : ContentPage
     {
+        Year currentYear;
+        String month;
         public SelectPage()
         {
             InitializeComponent();
         }
 
-        public SelectPage(Year year, String month)
+        public SelectPage(Year year, String m)
         {
             InitializeComponent();
+            currentYear = year;
+            month = m;
         }
 
-        public SelectPage(Year year)
+        async void AddIncome_Clicked(object sender, EventArgs e)
         {
-            InitializeComponent();
+            await Navigation.PushAsync(new AddIncomePage(currentYear, month));
+        }
+
+        async void AddExpense_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddExpensePage(currentYear, month));
+        }
+
+        async void ViewReport_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ViewReportPage(currentYear, month));
         }
     }
 }

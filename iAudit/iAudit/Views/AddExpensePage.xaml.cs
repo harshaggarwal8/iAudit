@@ -11,5 +11,10 @@ namespace iAudit.Views
         {
             InitializeComponent();
         }
-    }
+
+		public AddExpensePage(Year year, String month)
+		{
+			InitializeComponent();
+		}
+	}
 }

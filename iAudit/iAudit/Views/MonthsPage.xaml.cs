@@ -81,7 +81,7 @@ namespace iAudit.Views
 
         async void All_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SelectPage(currentYear));
+            await Navigation.PushAsync(new ViewReportPage(currentYear));
         }
     }
 }
