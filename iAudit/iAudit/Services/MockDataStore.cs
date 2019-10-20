@@ -35,18 +35,18 @@ namespace iAudit.Services
 
             incomes = new List<Income>()
             {
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Date = "10-15-2019", Month = "October" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Date = "10-07-2019", Month = "October" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of October 1st", Date = "10-01-2019", Month = "October" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Date = "09-15-2019", Month = "September" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of September 7th", Date = "09-07-2019", Month = "September" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of September 1st", Date = "09-01-2019", Month = "September" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Date = "08-15-2019", Month = "August" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of August 7th", Date = "08-07-2019", Month = "August" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Date = "08-01-2019", Month = "August" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Date = "07-07-2019", Month = "July" },
-                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Date = "10-15-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Date = "10-07-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of October 1st", Date = "10-01-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Date = "09-15-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of September 7th", Date = "09-07-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of September 1st", Date = "09-01-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Date = "08-15-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of August 7th", Date = "08-07-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Date = "08-01-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Date = "07-07-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
             };
         }
 

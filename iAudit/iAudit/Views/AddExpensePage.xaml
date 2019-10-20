@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="iAudit.Views.AddExpensePage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="iAudit.Views.AddExpensePage"
+             Title="Add Expense">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Add" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="Expense Title" FontSize="Medium" />
+            <Entry Text="{Binding Expense.ExpenseName}" Placeholder="Enter the title/source" d:Text="Expense Title" FontSize="Small" />
+            <Label Text="Notes" FontSize="Medium" />
+            <Editor Text="{Binding Expense.Notes}" Placeholder="Enter notes attached" d:Text="Expense notes" FontSize="Small" Margin="0" />
+            <Label Text="Amount" FontSize="Medium" />
+            <Editor Text="{Binding Expense.Amount}" d:Text="Expense Amount" Placeholder="Enter the amount in $" FontSize="Small" Margin="0" />
+            <Label Text="Date" FontSize="Medium" />
+            <Editor Text="{Binding Expense.Date}" d:Text="Date MM-DD-YYYY" Placeholder="Enter the date as MM-DD-YYY" FontSize="Small" Margin="0" />
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
+
