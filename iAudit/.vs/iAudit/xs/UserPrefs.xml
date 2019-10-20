@@ -1,19 +1,6 @@
 ﻿<Properties StartupConfiguration="{85BDDDE0-417B-4008-8BC5-A17B259615A3}|Default">
   <MonoDevelop.Ide.ItemProperties.iAudit.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_pie_9_0_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/AppShell.xaml">
-    <Files>
-      <File FileName="iAudit/ViewModels/ItemsViewModel.cs" Line="30" Column="10" IsPinned="True" />
-      <File FileName="iAudit/ViewModels/UserViewModel.cs" Line="1" Column="1" />
-      <File FileName="iAudit/Views/LoginPage.xaml" Line="17" Column="70" />
-      <File FileName="iAudit/Views/AboutPage.xaml" Line="1" Column="1" />
-      <File FileName="iAudit/Views/ItemsPage.xaml" Line="22" Column="23" />
-      <File FileName="iAudit/Views/ItemsPage.xaml.cs" Line="38" Column="73" />
-      <File FileName="iAudit/ViewModels/BaseViewModel.cs" Line="1" Column="1" />
-      <File FileName="iAudit/Views/LoginPage.xaml.cs" Line="38" Column="10" />
-      <File FileName="iAudit/AppShell.xaml" Line="27" Column="15" />
-      <File FileName="iAudit/Views/RegisterPage.xaml" Line="18" Column="58" />
-      <File FileName="iAudit/Views/RegisterPage.xaml.cs" Line="18" Column="15" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -26,20 +13,20 @@
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="LoginPage.xaml" expanded="True" />
+                <Node name="AddIncomePage.xaml" expanded="True" />
+                <Node name="ExpenseListPage.xaml" expanded="True" />
+                <Node name="IncomeListPage.xaml" expanded="True" />
                 <Node name="NewYearPage.xaml" expanded="True" />
                 <Node name="RegisterPage.xaml" expanded="True" />
-                <Node name="YearsPage.xaml" expanded="True" />
+                <Node name="YearsPage.xaml" expanded="True" selected="True" />
               </Node>
-              <Node name="App.xaml" expanded="True" />
-              <Node name="AppShell.xaml" expanded="True" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.iAudit.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F37A9D10-71F8-4EA9-A371-7CB2D66E28DA" />
+  <MonoDevelop.Ide.ItemProperties.iAudit.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.54E7BEAA-64D9-4335-A8E4-CED890B571A7" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

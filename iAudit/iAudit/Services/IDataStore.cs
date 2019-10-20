@@ -18,5 +18,11 @@ namespace iAudit.Services
         Task<bool> DeleteYearAsync(string id);
         Task<T> GetYearAsync(string id);
         Task<IEnumerable<Year>> GetYearAsync(bool forceRefresh = false);
+
+        Task<bool> AddIncomeAsync(Income income);
+        Task<bool> UpdateIncomeAsync(Income income);
+        Task<bool> DeleteIncomeAsync(string id);
+        Task<T> GetIncomeAsync(string id);
+        Task<IEnumerable<Income>> GetIncomeAsync(bool forceRefresh = false);
     }
 }

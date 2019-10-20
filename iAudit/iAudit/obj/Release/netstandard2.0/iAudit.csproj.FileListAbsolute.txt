@@ -25,8 +25,6 @@
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/AppShell.xaml.g.cs
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/AboutPage.xaml.g.cs
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
-/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ItemsPage.xaml.g.cs
-/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/NewItemPage.xaml.g.cs
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.AssemblyInfoInputs.cache
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.AssemblyInfo.cs
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/XamlC.stamp
@@ -41,3 +39,8 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/RegisterPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/YearsPage.xaml.g.cs
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/SelectPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/AddExpensePage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/AddIncomePage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ViewReportPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ExpenseListPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/IncomeListPage.xaml.g.cs

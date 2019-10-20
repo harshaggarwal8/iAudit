@@ -6,10 +6,11 @@ using iAudit.Models;
 
 namespace iAudit.Services
 {
-    public class MockDataStore : IDataStore<Item>, IDataStore<Year>
+    public class MockDataStore : IDataStore<Item>, IDataStore<Year>, IDataStore<Income>
     {
         readonly List<Item> items;
         readonly List<Year> years;
+        readonly List<Income> incomes;
 
         public MockDataStore()
         {
@@ -30,6 +31,22 @@ namespace iAudit.Services
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2021", Description="No notes" },
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2022", Description="No notes" },
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2023", Description="No notes" }
+            };
+
+            incomes = new List<Income>()
+            {
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Date = "10-15-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Date = "10-07-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of October 1st", Date = "10-01-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Date = "09-15-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of September 7th", Date = "09-07-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of September 1st", Date = "09-01-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Date = "08-15-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of August 7th", Date = "08-07-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Date = "08-01-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Date = "07-07-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), Title = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
             };
         }
 
@@ -102,6 +119,40 @@ namespace iAudit.Services
             return await Task.FromResult(years);
         }
 
+        public async Task<bool> AddIncomeAsync(Income income)
+        {
+            incomes.Add(income);
+
+            return await Task.FromResult(true);
+        }
+
+        public async Task<bool> UpdateIncomeAsync(Income income)
+        {
+            var oldItem = incomes.Where((Income arg) => arg.Id == income.Id).FirstOrDefault();
+            incomes.Remove(oldItem);
+            incomes.Add(income);
+
+            return await Task.FromResult(true);
+        }
+
+        public async Task<bool> DeleteIncomeAsync(string id)
+        {
+            var oldItem = incomes.Where((Income arg) => arg.Id == id).FirstOrDefault();
+            incomes.Remove(oldItem);
+
+            return await Task.FromResult(true);
+        }
+
+        public async Task<Income> GetIncomeAsync(string id)
+        {
+            return await Task.FromResult(incomes.FirstOrDefault(s => s.Id == id));
+        }
+
+        public async Task<IEnumerable<Income>> GetIncomeAsync(bool forceRefresh = false)
+        {
+            return await Task.FromResult(incomes);
+        }
+
         public Task<bool> AddItemAsync(Year item)
         {
             throw new NotImplementedException();
@@ -138,6 +189,41 @@ namespace iAudit.Services
         }
 
         Task<Item> IDataStore<Item>.GetYearAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> AddItemAsync(Income item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateItemAsync(Income item)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Income> IDataStore<Income>.GetItemAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IEnumerable<Income>> IDataStore<Income>.GetItemsAsync(bool forceRefresh)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Income> IDataStore<Income>.GetYearAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Year> IDataStore<Year>.GetIncomeAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Item> IDataStore<Item>.GetIncomeAsync(string id)
         {
             throw new NotImplementedException();
         }

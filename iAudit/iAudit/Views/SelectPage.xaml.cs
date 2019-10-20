@@ -21,14 +21,14 @@ namespace iAudit.Views
             month = m;
         }
 
-        async void AddIncome_Clicked(object sender, EventArgs e)
+        async void Income_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddIncomePage(currentYear, month));
+            await Navigation.PushAsync(new IncomeListPage(currentYear, month));
         }
 
-        async void AddExpense_Clicked(object sender, EventArgs e)
+        async void Expense_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddExpensePage(currentYear, month));
+            await Navigation.PushAsync(new ExpenseListPage(currentYear, month));
         }
 
         async void ViewReport_Clicked(object sender, EventArgs e)

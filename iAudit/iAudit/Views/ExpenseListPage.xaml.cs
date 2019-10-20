@@ -5,19 +5,19 @@ using Xamarin.Forms;
 
 namespace iAudit.Views
 {
-    public partial class ViewReportPage : ContentPage
+    public partial class ExpenseListPage : ContentPage
     {
-        public ViewReportPage()
+        public ExpenseListPage()
         {
             InitializeComponent();
         }
 
-        public ViewReportPage(Year year, String month)
+        public ExpenseListPage(Year year)
         {
             InitializeComponent();
         }
 
-        public ViewReportPage(Year year)
+        public ExpenseListPage(Year year, String month)
         {
             InitializeComponent();
         }
