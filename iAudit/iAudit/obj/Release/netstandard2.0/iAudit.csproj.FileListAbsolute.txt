@@ -40,3 +40,4 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/NewYearPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/RegisterPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/YearsPage.xaml.g.cs
+/Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/SelectPage.xaml.g.cs

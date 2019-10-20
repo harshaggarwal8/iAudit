@@ -4,19 +4,19 @@
              x:Class="iAudit.Views.MonthsPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical">
-            <Button Text="January"/>
-            <Button Text="February"/>
-            <Button Text="March" />
-            <Button Text="April" />
-            <Button Text="May"/>
-            <Button Text="June"/>
-            <Button Text="July" />
-            <Button Text="August" />
-            <Button Text="September"/>
-            <Button Text="October"/>
-            <Button Text="November" />
-            <Button Text="December" />
-            <Button Text="View All" />
+            <Button Text="January" Clicked="Jan_Clicked"/>
+            <Button Text="February" Clicked="Feb_Clicked"/>
+            <Button Text="March" Clicked="Mar_Clicked"/>
+            <Button Text="April" Clicked="Apr_Clicked"/>
+            <Button Text="May" Clicked="May_Clicked"/>
+            <Button Text="June" Clicked="Jun_Clicked"/>
+            <Button Text="July" Clicked="Jul_Clicked"/>
+            <Button Text="August" Clicked="Aug_Clicked"/>
+            <Button Text="September" Clicked="Sep_Clicked"/>
+            <Button Text="October" Clicked="Oct_Clicked"/>
+            <Button Text="November" Clicked="Nov_Clicked"/>
+            <Button Text="December" Clicked="Dec_Clicked"/>
+            <Button Text="View All" Clicked="All_Clicked"/>
         </StackLayout>        
     </ContentPage.Content>
 </ContentPage>
