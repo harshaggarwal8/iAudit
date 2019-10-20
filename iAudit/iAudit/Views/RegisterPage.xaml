@@ -15,7 +15,7 @@
             <Entry Text="Confirm Email"/>
             <Entry Text="Password" IsPassword="True"/>
             <Entry Text="Confirm Password" IsPassword="True"/>
-            <Button Text="SUBMIT"/>
+            <Button Text="SUBMIT" Clicked="SUBMIT_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

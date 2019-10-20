@@ -11,5 +11,12 @@ namespace iAudit.Views
         {
             InitializeComponent();
         }
+
+        async void SUBMIT_Clicked(object sender, EventArgs e)
+        {
+            base.OnBackButtonPressed();
+            //   return true;
+            //await Navigation.PushAsync(new LoginPage());
+        }
     }
 }

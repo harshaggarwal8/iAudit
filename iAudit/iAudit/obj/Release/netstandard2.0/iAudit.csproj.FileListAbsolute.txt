@@ -6,8 +6,6 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/AppShell.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/AboutPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ItemsPage.xaml.g.cs
-/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/NewItemPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.AssemblyInfoInputs.cache
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/iAudit.AssemblyInfo.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/XamlC.stamp
