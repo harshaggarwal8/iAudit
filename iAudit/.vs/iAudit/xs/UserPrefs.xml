@@ -1,13 +1,13 @@
-﻿<Properties StartupConfiguration="{85BDDDE0-417B-4008-8BC5-A17B259615A3}|Default">
+﻿<Properties StartupConfiguration="{B727C7AC-0318-4E31-8BB3-27366766BD59}|Default">
   <MonoDevelop.Ide.ItemProperties.iAudit.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_pie_9_0_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iAudit.iOS/Resources/LaunchScreen.storyboard">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../.nuget/packages/xamarin.essentials/1.3.1/readme.txt">
     <Files>
-      <File FileName="iAudit/ViewModels/AboutViewModel.cs" Line="19" Column="2" />
-      <File FileName="iAudit/ViewModels/UserViewModel.cs" />
-      <File FileName="iAudit/ViewModels/YearViewModel.cs" />
+      <File FileName="iAudit/ViewModels/YearViewModel.cs" Line="1" Column="1" />
       <File FileName="iAudit/ViewModels/ItemDetailViewModel.cs" />
       <File FileName="iAudit.Android/MainActivity.cs" />
-      <File FileName="iAudit.iOS/Resources/LaunchScreen.storyboard" />
+      <File FileName="iAudit.Android/SplashActivity.cs" />
+      <File FileName="iAudit/Views/NewYearPage.xaml" Line="1" Column="1" />
+      <File FileName="../../../../.nuget/packages/xamarin.essentials/1.3.1/readme.txt" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,22 +15,20 @@
           <Node name="iAudit" expanded="True">
             <Node name="iAudit" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+                <Node name="PackageDependencies" expanded="True">
+                  <Node name="Xamarin.Essentials" selected="True" />
+                </Node>
               </Node>
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
             </Node>
             <Node name="iAudit.Android" expanded="True">
+              <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="drawable" expanded="True" />
                 <Node name="layout" expanded="True" />
-                <Node name="mipmap-hdpi" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="iAudit.iOS" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="LaunchScreen.storyboard" selected="True" />
               </Node>
             </Node>
           </Node>
