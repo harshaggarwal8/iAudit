@@ -8,7 +8,9 @@
              Title="Register">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Margin="50">
+                     Margin="50"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
             <Entry Text="First Name"/>
             <Entry Text="Last Name"/>
             <Entry Text="Email"/>

@@ -147,4 +147,13 @@
   <ItemGroup>
     <Folder Include="Assets.xcassets\Splash.imageset\" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\expense.png" />
+    <AndroidResource Include="Resources\income.jpg" />
+    <AndroidResource Include="Resources\logo.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\report.png" />
+  </ItemGroup>
 </Project>

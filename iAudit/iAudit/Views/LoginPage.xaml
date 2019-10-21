@@ -7,9 +7,9 @@
              x:Class="iAudit.Views.LoginPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Margin="40" Padding="40">
+        <StackLayout Orientation="Vertical" Margin="40" Padding="40" VerticalOptions="Center" HorizontalOptions="Center">
              <StackLayout Spacing="20" Padding="15" Orientation="Vertical">
-                <Image Source="logo.png" WidthRequest="30" HeightRequest="30"/>
+                <Image Source="@drawable/logo.png" WidthRequest="100" HeightRequest="100"/>
                 <Entry Placeholder="enter email" />
                 <Entry Placeholder="enter password" IsPassword="True" />
                 <StackLayout Spacing="20" Padding="15" Orientation="Horizontal">
