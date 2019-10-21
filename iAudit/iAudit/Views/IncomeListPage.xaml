@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="iAudit.Views.IncomeListPage"
-             Title="Income Log"
+             Title="{Binding Title}"
              x:Name="IncomeLog">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddIncome_Clicked" />

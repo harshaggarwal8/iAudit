@@ -13,13 +13,13 @@
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
             <Label Text="Income Title" FontSize="Medium" />
-            <Entry Text="{Binding Income.IncomeName}" Placeholder="Enter the title/source" d:Text="Income Title" FontSize="Small" />
+            <Entry Text="{Binding Income.IncomeName}" d:Text="Income Title" FontSize="Small" />
             <Label Text="Notes" FontSize="Medium" />
-            <Editor Text="{Binding Income.Notes}" Placeholder="Enter notes attached" d:Text="Income notes" FontSize="Small" Margin="0" />
+            <Editor Text="{Binding Income.Notes}" d:Text="Income notes" FontSize="Small" Margin="0" />
             <Label Text="Amount" FontSize="Medium" />
-            <Editor Text="{Binding Income.Amount}" d:Text="Income Amount" Placeholder="Enter the amount in $" FontSize="Small" Margin="0" />
+            <Editor Text="{Binding Income.Amount}" d:Text="Income Amount" FontSize="Small" Margin="0" />
             <Label Text="Date" FontSize="Medium" />
-            <Editor Text="{Binding Income.Date}" d:Text="Date MM-DD-YYYY" Placeholder="Enter the date as MM-DD-YYY" FontSize="Small" Margin="0" />
+            <Editor Text="{Binding Income.Date}" d:Text="Date MM-DD-YYYY" FontSize="Small" Margin="0" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

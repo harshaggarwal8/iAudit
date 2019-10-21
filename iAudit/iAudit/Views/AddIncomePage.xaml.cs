@@ -13,14 +13,13 @@ namespace iAudit.Views
     {
         
         public Income income { get; set; }
-        /*
+        
         public AddIncomePage()
         {
             InitializeComponent();
-            //var _title = Title.Text;
             income = new Income
             {
-                Title = "Expense",
+                IncomeName = "Expense",
                 Notes = "No Notes.",
                 Date = "MM-DD-YYYY",
                 Amount = 000.00,
@@ -29,7 +28,7 @@ namespace iAudit.Views
 
             BindingContext = this;
         }
-        */
+        
 		public AddIncomePage(Year year, String month)
 		{
             InitializeComponent();

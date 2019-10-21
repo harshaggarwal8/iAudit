@@ -12,12 +12,23 @@ namespace iAudit.Views
     public partial class AddExpensePage : ContentPage
     {
         public Expense expense{ get; set; }
-        /*
+        
         public AddExpensePage()
         {
             InitializeComponent();
+
+            expense = new Expense
+            {
+                ExpenseName = "Expense",
+                Notes = "No Notes.",
+                Date = "MM-DD-YYYY",
+                Amount = 000.00,
+                Category = "Expense"
+            };
+
+            BindingContext = this;
         }
-        */
+        
         public AddExpensePage(Year year, String month)
         {
             InitializeComponent();

@@ -17,17 +17,17 @@ namespace iAudit.Views
     {
         Year currentYear;
         String currentMonth;
-        IncomeViewModel viewModel; //change to expense view model
+        ExpenseViewModel viewModel;
         public ExpenseListPage()
         {
             InitializeComponent();
-            BindingContext = viewModel = new IncomeViewModel();
+            BindingContext = viewModel = new ExpenseViewModel();
         }
 
         public ExpenseListPage(Year year, String month)
         {
             InitializeComponent();
-            BindingContext = viewModel = new IncomeViewModel(); //change to expense view model
+            BindingContext = viewModel = new ExpenseViewModel(); 
             currentMonth = month;
             currentYear = year;
         }
@@ -53,25 +53,8 @@ namespace iAudit.Views
         {
             base.OnAppearing();
 
-            if (viewModel.Incomes.Count == 0) //change after expenses.count
+            if (viewModel.Expenses.Count == 0) //change after expenses.count
                 viewModel.LoadItemsCommand.Execute(null);
         }
-        /*
-        public ExpenseListPage()
-        {
-            InitializeComponent();
-            BindingContext = viewModel = new IncomeViewModel(); //change to expense view model
-        }
-
-        public ExpenseListPage(Year year)
-        {
-            InitializeComponent();
-        }
-
-        public ExpenseListPage(Year year, String month)
-        {
-            InitializeComponent();
-        }*/
-
     }
 }

@@ -10,21 +10,21 @@ using iAudit.Views;
 
 namespace iAudit.ViewModels
 {
-    public class IncomeViewModel : BaseViewModel
+    public class ExpenseViewModel : BaseViewModel
     {
-        public ObservableCollection<Income> Incomes { get; set; }
+        public ObservableCollection<Expense> Expenses { get; set; }
         public Command LoadItemsCommand { get; set; }
-        public IncomeViewModel()
+        public ExpenseViewModel()
         {
-            Title = "Income Log";
-            Incomes = new ObservableCollection<Income>();
+            Title = "Expense Log";
+            Expenses = new ObservableCollection<Expense>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            MessagingCenter.Subscribe<AddIncomePage, Income>(this, "AddIncome", async (obj, income) =>
+            MessagingCenter.Subscribe<AddExpensePage, Expense>(this, "AddExpense", async (obj, expense) =>
             {
-                var newIncome = income as Income;
-                Incomes.Add(newIncome);
-                await DataStore.AddIncomeAsync(newIncome);
+                var newExpense = expense as Expense;
+                Expenses.Add(newExpense);
+                await DataStore.AddExpenseAsync(newExpense);
             });
         }
         async Task ExecuteLoadItemsCommand()
@@ -36,11 +36,11 @@ namespace iAudit.ViewModels
 
             try
             {
-                Incomes.Clear();
-                var incomes = await DataStore.GetIncomeAsync(true);
-                foreach (var income in incomes)
+                Expenses.Clear();
+                var expenses = await DataStore.GetExpenseAsync(true);
+                foreach (var expense in expenses)
                 {
-                    Incomes.Add(income);
+                    Expenses.Add(expense);
                 }
             }
             catch (Exception ex)
@@ -54,5 +54,4 @@ namespace iAudit.ViewModels
         }
     }
 }
-
 

@@ -13,7 +13,7 @@
     <ContentPage.Content>
         <StackLayout>
         <ListView x:Name="ExpenseListView"
-                  ItemsSource="{Binding Incomes}"
+                  ItemsSource="{Binding Expenses}"
                   VerticalOptions="FillAndExpand"
                   HasUnevenRows="true"
                   RefreshCommand="{Binding LoadItemsCommand}"

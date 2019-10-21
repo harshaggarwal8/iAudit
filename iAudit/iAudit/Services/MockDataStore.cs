@@ -6,11 +6,12 @@ using iAudit.Models;
 
 namespace iAudit.Services
 {
-    public class MockDataStore : IDataStore<Item>, IDataStore<Year>, IDataStore<Income>
+    public class MockDataStore : IDataStore<Item>, IDataStore<Year>, IDataStore<Income>, IDataStore<Expense>
     {
         readonly List<Item> items;
         readonly List<Year> years;
         readonly List<Income> incomes;
+        readonly List<Expense> expenses;
 
         public MockDataStore()
         {
@@ -47,6 +48,16 @@ namespace iAudit.Services
                 new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
                 new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Date = "07-07-2019", Month = "July" },
                 new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
+            };
+
+            expenses = new List<Expense>()
+            {
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "10-15-2019", Month = "October" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "10-03-2019", Month = "October" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "09-15-2019", Month = "September" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "09-13-2019", Month = "September" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "08-15-2019", Month = "August" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "08-13-2019", Month = "August" }
             };
         }
 
@@ -153,6 +164,40 @@ namespace iAudit.Services
             return await Task.FromResult(incomes);
         }
 
+        public async Task<bool> AddExpenseAsync(Expense expense)
+        {
+            expenses.Add(expense);
+
+            return await Task.FromResult(true);
+        }
+
+        public async Task<bool> UpdateExpenseAsync(Expense expense)
+        {
+            var oldItem = expenses.Where((Expense arg) => arg.Id == expense.Id).FirstOrDefault();
+            expenses.Remove(oldItem);
+            expenses.Add(expense);
+
+            return await Task.FromResult(true);
+        }
+
+        public async Task<bool> DeleteExpenseAsync(string id)
+        {
+            var oldItem = expenses.Where((Expense arg) => arg.Id == id).FirstOrDefault();
+            expenses.Remove(oldItem);
+
+            return await Task.FromResult(true);
+        }
+
+        public async Task<Expense> GetExpenseAsync(string id)
+        {
+            return await Task.FromResult(expenses.FirstOrDefault(s => s.Id == id));
+        }
+
+        public async Task<IEnumerable<Expense>> GetExpenseAsync(bool forceRefresh = false)
+        {
+            return await Task.FromResult(expenses);
+        }
+
         public Task<bool> AddItemAsync(Year item)
         {
             throw new NotImplementedException();
@@ -224,6 +269,51 @@ namespace iAudit.Services
         }
 
         Task<Item> IDataStore<Item>.GetIncomeAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> AddItemAsync(Expense item)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> UpdateItemAsync(Expense item)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Expense> IDataStore<Expense>.GetItemAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<IEnumerable<Expense>> IDataStore<Expense>.GetItemsAsync(bool forceRefresh)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Expense> IDataStore<Expense>.GetYearAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Expense> IDataStore<Expense>.GetIncomeAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Item> IDataStore<Item>.GetExpenseAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Year> IDataStore<Year>.GetExpenseAsync(string id)
+        {
+            throw new NotImplementedException();
+        }
+
+        Task<Income> IDataStore<Income>.GetExpenseAsync(string id)
         {
             throw new NotImplementedException();
         }
