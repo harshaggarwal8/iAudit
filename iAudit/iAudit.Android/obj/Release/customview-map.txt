@@ -33,12 +33,14 @@ LinearLayout;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/o
 paths;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/38/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;obj/Release/res/layout/splash.xml
 resources;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/39/jl/res/values/styles.xml
+resources;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/41/jl/res/values/strings.xml
 resources;obj/Release/res/values/colors.xml
 resources;obj/Release/res/values/styles.xml
 set;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/39/jl/res/anim/enterfromleft.xml
 set;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/39/jl/res/anim/enterfromright.xml
 set;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/39/jl/res/anim/exittoleft.xml
 set;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/39/jl/res/anim/exittoright.xml
+string;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/41/jl/res/values/strings.xml
 style;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/lp/39/jl/res/values/styles.xml
 style;obj/Release/res/values/styles.xml
 TextView;obj/Release/res/layout/splash.xml

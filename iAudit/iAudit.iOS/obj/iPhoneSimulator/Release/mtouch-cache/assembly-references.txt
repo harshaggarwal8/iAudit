@@ -24,3 +24,13 @@
 /Users/harshaggarwal/.nuget/packages/xamarin.testcloud.agent/0.21.8/lib/Xamarin.iOS/Calabash.dll
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/bin/Release/netstandard2.0/iAudit.dll
 /Users/harshaggarwal/.nuget/packages/xamarin.forms/4.2.0.709249/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
+/Users/harshaggarwal/.nuget/packages/microcharts.forms/0.7.1/lib/netstandard1.4/Microcharts.Forms.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.2.0.42/lib/mono/Xamarin.iOS/Facades/System.Runtime.dll
+/Users/harshaggarwal/.nuget/packages/skiasharp.views.forms/1.59.1.1/lib/XamariniOS/SkiaSharp.Views.Forms.dll
+/Users/harshaggarwal/.nuget/packages/skiasharp.views/1.59.1.1/lib/XamariniOS/SkiaSharp.Views.iOS.dll
+/Users/harshaggarwal/.nuget/packages/skiasharp/1.59.1/lib/XamariniOS/SkiaSharp.dll
+/Users/harshaggarwal/.nuget/packages/microcharts/0.7.1/lib/Xamarin.iOS10/Microcharts.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.2.0.42/lib/mono/Xamarin.iOS/Facades/System.Collections.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.2.0.42/lib/mono/Xamarin.iOS/Facades/System.ValueTuple.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.2.0.42/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.2.0.42/lib/mono/Xamarin.iOS/Facades/System.Linq.dll

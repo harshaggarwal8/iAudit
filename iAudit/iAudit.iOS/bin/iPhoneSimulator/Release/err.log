@@ -1,24 +1,21 @@
-2019-10-19 22:16:01.958664-0500 iAudit.iOS[1494:62409] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1494
-2019-10-19 22:16:01.958911-0500 iAudit.iOS[1494:62409] SecTaskCopyDebugDescription: iAudit.iOS[1494]/0#-1 LF=0
-2019-10-19 22:16:01.966506-0500 iAudit.iOS[1494:62428] DEBUG CalabashServer:248 | Creating the server: <LPHTTPServer: 0x60000151c160>
-2019-10-19 22:16:01.966 DEBUG CalabashServer:248 | Creating the server: <LPHTTPServer: 0x60000151c160>
-2019-10-19 22:16:01.966 DEBUG CalabashServer:249 | Calabash iOS server version: CALABASH VERSION: 0.21.8
-2019-10-19 22:16:01.968066-0500 iAudit.iOS[1494:62428] DEBUG CalabashServer:249 | Calabash iOS server version: CALABASH VERSION: 0.21.8
-2019-10-19 22:16:01.966 DEBUG CalabashServer:260 | XTC_SKIP_LPSERVER_TOKEN is not defined in enviroment
-2019-10-19 22:16:01.968460-0500 iAudit.iOS[1494:62419] DEBUG CalabashServer:260 | XTC_SKIP_LPSERVER_TOKEN is not defined in enviroment
-2019-10-19 22:16:01.966 DEBUG CalabashServer:261 | Embedded (linked) Calabash Server was started.
-2019-10-19 22:16:01.968779-0500 iAudit.iOS[1494:62428] DEBUG CalabashServer:261 | Embedded (linked) Calabash Server was started.
-2019-10-19 22:16:01.966 DEBUG CalabashServer:270 | App Base SDK: iphonesimulator13.0
-2019-10-19 22:16:01.969087-0500 iAudit.iOS[1494:62419] DEBUG CalabashServer:270 | App Base SDK: iphonesimulator13.0
-2019-10-19 22:16:01.967 DEBUG CalabashServer:302 | IPHONE_SIMULATOR_ROOT: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot
-2019-10-19 22:16:01.969403-0500 iAudit.iOS[1494:62428] DEBUG CalabashServer:302 | IPHONE_SIMULATOR_ROOT: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot
-2019-10-19 22:16:01.971 DEBUG CalabashServer:288 | Calabash iOS server is listening on: 10.219.151.87 port 37265
-2019-10-19 22:16:01.970736-0500 iAudit.iOS[1494:62419] DEBUG CalabashServer:288 | Calabash iOS server is listening on: 10.219.151.87 port 37265
-2019-10-19 22:16:01.975 DEBUG LPWKWebViewRuntimeLoader:221 | WKWebView successfully implemented LPWebViewProtocol
-2019-10-19 22:16:01.975687-0500 iAudit.iOS[1494:62428] DEBUG LPWKWebViewRuntimeLoader:221 | WKWebView successfully implemented LPWebViewProtocol
+2019-10-20 22:07:42.963060-0500 iAudit.iOS[6962:634696] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=6962
+2019-10-20 22:07:42.964349-0500 iAudit.iOS[6962:634696] SecTaskCopyDebugDescription: iAudit.iOS[6962]/0#-1 LF=0
+2019-10-20 22:07:42.974637-0500 iAudit.iOS[6962:634712] DEBUG CalabashServer:248 | Creating the server: <LPHTTPServer: 0x6000004880b0>
+2019-10-20 22:07:42.974 DEBUG CalabashServer:248 | Creating the server: <LPHTTPServer: 0x6000004880b0>
+2019-10-20 22:07:42.975 DEBUG CalabashServer:249 | Calabash iOS server version: CALABASH VERSION: 0.21.8
+2019-10-20 22:07:42.976452-0500 iAudit.iOS[6962:634704] DEBUG CalabashServer:249 | Calabash iOS server version: CALABASH VERSION: 0.21.8
+2019-10-20 22:07:42.975 DEBUG CalabashServer:260 | XTC_SKIP_LPSERVER_TOKEN is not defined in enviroment
+2019-10-20 22:07:42.976811-0500 iAudit.iOS[6962:634712] DEBUG CalabashServer:260 | XTC_SKIP_LPSERVER_TOKEN is not defined in enviroment
+2019-10-20 22:07:42.975 DEBUG CalabashServer:261 | Embedded (linked) Calabash Server was started.
+2019-10-20 22:07:42.977114-0500 iAudit.iOS[6962:634704] DEBUG CalabashServer:261 | Embedded (linked) Calabash Server was started.
+2019-10-20 22:07:42.975 DEBUG CalabashServer:270 | App Base SDK: iphonesimulator13.0
+2019-10-20 22:07:42.978300-0500 iAudit.iOS[6962:634712] DEBUG CalabashServer:270 | App Base SDK: iphonesimulator13.0
+2019-10-20 22:07:42.975 DEBUG CalabashServer:302 | IPHONE_SIMULATOR_ROOT: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot
+2019-10-20 22:07:42.979822-0500 iAudit.iOS[6962:634704] DEBUG CalabashServer:302 | IPHONE_SIMULATOR_ROOT: /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS.simruntime/Contents/Resources/RuntimeRoot
+2019-10-20 22:07:42.987 DEBUG CalabashServer:288 | Calabash iOS server is listening on: 10.219.151.87 port 37265
+2019-10-20 22:07:42.987113-0500 iAudit.iOS[6962:634704] DEBUG CalabashServer:288 | Calabash iOS server is listening on: 10.219.151.87 port 37265
+2019-10-20 22:07:42.993 DEBUG LPWKWebViewRuntimeLoader:221 | WKWebView successfully implemented LPWebViewProtocol
+2019-10-20 22:07:42.993202-0500 iAudit.iOS[6962:634710] DEBUG LPWKWebViewRuntimeLoader:221 | WKWebView successfully implemented LPWebViewProtocol
 MonoTouch: Could not install sigaction override, unexpected sigaction implementation.
-2019-10-19 22:16:02.961890-0500 iAudit.iOS[1494:62409] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=1494
-2019-10-19 22:16:02.966192-0500 iAudit.iOS[1494:62409] SecTaskCopyDebugDescription: iAudit.iOS[1494]/0#-1 LF=0
-2019-10-19 22:16:52.335773-0500 iAudit.iOS[1494:62409] [unspecified] container_system_group_path_for_identifier: error = (container_error_t)53
-2019-10-19 22:16:52.335925-0500 iAudit.iOS[1494:62409] [MC] Error getting system group container for systemgroup.com.apple.configurationprofiles: 53
-2019-10-19 22:16:52.336062-0500 iAudit.iOS[1494:62409] [MC] Failed to get profile system group container path. Overriding with expected path: /Users/harshaggarwal/Library/Developer/CoreSimulator/Devices/F37A9D10-71F8-4EA9-A371-7CB2D66E28DA/data/Containers/Shared/SystemGroup/systemgroup.com.apple.configurationprofiles
+2019-10-20 22:07:43.939589-0500 iAudit.iOS[6962:634696] SecTaskLoadEntitlements failed error=22 cs_flags=200, pid=6962
+2019-10-20 22:07:43.939808-0500 iAudit.iOS[6962:634696] SecTaskCopyDebugDescription: iAudit.iOS[6962]/0#-1 LF=0

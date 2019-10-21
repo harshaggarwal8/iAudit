@@ -1,6 +1,12 @@
 ﻿<Properties StartupConfiguration="{85BDDDE0-417B-4008-8BC5-A17B259615A3}|Default">
   <MonoDevelop.Ide.ItemProperties.iAudit.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_pie_9_0_api_28" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/Views/ViewReportPage.xaml">
+    <Files>
+      <File FileName="iAudit/Views/SelectPage.xaml" Line="19" Column="1" />
+      <File FileName="iAudit/Views/SelectPage.xaml.cs" Line="36" Column="55" />
+      <File FileName="iAudit/Views/ViewReportPage.xaml" Line="6" Column="1" />
+      <File FileName="iAudit/Views/ViewReportPage.xaml.cs" Line="18" Column="10" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
@@ -18,7 +24,9 @@
                 <Node name="IncomeListPage.xaml" expanded="True" />
                 <Node name="NewYearPage.xaml" expanded="True" />
                 <Node name="RegisterPage.xaml" expanded="True" />
-                <Node name="YearsPage.xaml" expanded="True" selected="True" />
+                <Node name="SelectPage.xaml" expanded="True" />
+                <Node name="ViewReportPage.xaml" expanded="True" selected="True" />
+                <Node name="YearsPage.xaml" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -26,7 +34,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.iAudit.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.54E7BEAA-64D9-4335-A8E4-CED890B571A7" />
+  <MonoDevelop.Ide.ItemProperties.iAudit.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.F37A9D10-71F8-4EA9-A371-7CB2D66E28DA" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
