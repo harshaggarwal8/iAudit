@@ -14,6 +14,8 @@ namespace iAudit.Views
         UserViewModel viewModel;
         public LoginPage(UserViewModel viewModel)
         {
+            //var image = new Image { };
+            //image.Source = Device.RuntimePlatform == Device.Android ? ImageSource.FromFile("logo.png") : ImageSource.FromFile("logo.png");
             InitializeComponent();
             BindingContext = this.viewModel = viewModel;
         }

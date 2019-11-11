@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{85BDDDE0-417B-4008-8BC5-A17B259615A3}|Default">
   <MonoDevelop.Ide.ItemProperties.iAudit.Android AndroidDesignerPreferredTheme="Theme.AppCompat.Light.NoActionBar" PreferredExecutionTarget="Android.pixel_3_pie_9_0_api_28" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iAudit/Views/ViewReportPage.xaml">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="iAudit/Views/SelectPage.xaml" Line="19" Column="1" />
-      <File FileName="iAudit/Views/SelectPage.xaml.cs" Line="36" Column="55" />
-      <File FileName="iAudit/Views/ViewReportPage.xaml" Line="6" Column="1" />
-      <File FileName="iAudit/Views/ViewReportPage.xaml.cs" Line="18" Column="10" />
+      <File FileName="iAudit/Views/SelectPage.xaml" Line="11" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,22 +12,24 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="AddIncomePage.xaml" expanded="True" />
+                <Node name="AboutPage.xaml" expanded="True" />
                 <Node name="ExpenseListPage.xaml" expanded="True" />
-                <Node name="IncomeListPage.xaml" expanded="True" />
-                <Node name="NewYearPage.xaml" expanded="True" />
-                <Node name="RegisterPage.xaml" expanded="True" />
+                <Node name="LoginPage.xaml" expanded="True" selected="True" />
                 <Node name="SelectPage.xaml" expanded="True" />
-                <Node name="ViewReportPage.xaml" expanded="True" selected="True" />
-                <Node name="YearsPage.xaml" expanded="True" />
               </Node>
             </Node>
+            <Node name="iAudit.Android" expanded="True">
+              <Node name="Resources" expanded="True">
+                <Node name="drawable" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="iAudit.iOS" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
@@ -38,7 +37,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/Models/Expense.cs" relfile="iAudit/Models/Expense.cs" line="14" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
