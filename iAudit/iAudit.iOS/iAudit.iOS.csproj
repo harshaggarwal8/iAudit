@@ -123,6 +123,18 @@
     <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo.png" />
     <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-1.png" />
     <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-2.png" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income.jpg" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report.png" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-1.png" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-2.png" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense.png" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-1.png" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -146,6 +158,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\Splash.imageset\" />
+    <Folder Include="Assets.xcassets\Income1.imageset\" />
+    <Folder Include="Assets.xcassets\Expense1.imageset\" />
+    <Folder Include="Assets.xcassets\Report1.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\expense.png" />
