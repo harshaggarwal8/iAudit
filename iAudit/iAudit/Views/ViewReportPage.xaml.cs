@@ -11,7 +11,11 @@ namespace iAudit.Views
     
     public partial class ViewReportPage : ContentPage
     {
-        
+        public double Income { get; set; }
+        public double Expense { get; set; }
+        public double Profit_Loss { get; set; }
+        public double Projection{ get; set; }
+
         public ViewReportPage()
         {
             InitializeComponent();
@@ -27,23 +31,23 @@ namespace iAudit.Views
 
             var entries = new[]
             {
-                new Microcharts.Entry(200)
+                new Microcharts.Entry(1000)
                 {
                     Label = "January",
-                    ValueLabel = "200",
+                    ValueLabel = "3000",
                     Color = SKColor.Parse("#104950")
                     //FillColor = SKColor.Parse("#266489")
                 },
-                new Microcharts.Entry(400)
+                new Microcharts.Entry(4020)
                 {
                     Label = "February",
-                    ValueLabel = "400",
+                    ValueLabel = "7000",
                     Color = SKColor.Parse("#F7A4B9")
                 },
                 new Microcharts.Entry(-100)
                 {
                     Label = "March",
-                    ValueLabel = "-100",
+                    ValueLabel = "9000",
                     Color = SKColor.Parse("#0084b4")
                 }
             };
@@ -58,6 +62,66 @@ namespace iAudit.Views
             var chart5 = new RadarChart() { Entries = entries };
             */
             this.chartView.Chart = chart;
+
+            var entries1 = new[]
+            {
+                new Microcharts.Entry(1000)
+                {
+                    Label = "January",
+                    ValueLabel = "3000",
+                    Color = SKColor.Parse("#104950")
+                    //FillColor = SKColor.Parse("#266489")
+                },
+                new Microcharts.Entry(4020)
+                {
+                    Label = "February",
+                    ValueLabel = "7000",
+                    Color = SKColor.Parse("#F7A4B9")
+                },
+                new Microcharts.Entry(-100)
+                {
+                    Label = "March",
+                    ValueLabel = "9000",
+                    Color = SKColor.Parse("#0084b4")
+                }
+            };
+
+            var line = new LineChart() { Entries = entries1 };
+
+            this.lineView.Chart = line;
+
+            var entries2 = new[]
+            {
+                new Microcharts.Entry(1000)
+                {
+                    Label = "Repairs",
+                    ValueLabel = "400",
+                    Color = SKColor.Parse("#104250")
+                    //FillColor = SKColor.Parse("#266489")
+                },
+                new Microcharts.Entry(4020)
+                {
+                    Label = "Machinery",
+                    ValueLabel = "1500",
+                    Color = SKColor.Parse("#F7A9B9")
+                },
+                new Microcharts.Entry(-100)
+                {
+                    Label = "Inventory",
+                    ValueLabel = "1000",
+                    Color = SKColor.Parse("#0184b4")
+                }
+            };
+
+            var donut = new DonutChart() { Entries = entries2 };
+
+            this.donutView.Chart = donut;
+
+            Income = 19000;
+            Expense = 1200;
+            Profit_Loss = Income - Expense;
+            Projection = Profit_Loss / Income * 100;
+            
         }
         public ViewReportPage(Year year)
         {

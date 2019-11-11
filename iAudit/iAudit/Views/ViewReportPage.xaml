@@ -1,11 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="AliceBlue"
     xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" 
     xmlns:local="clr-namespace:Microcharts.Samples.Forms"
     x:Class="iAudit.Views.ViewReportPage">
-
-    <microcharts:ChartView x:Name="chartView"
-                           />
+    <StackLayout Orientation="Vertical" >
+        <Label Text="Total Income: $19,000"/>
+        <Label Text="{Binding Income}" FontSize="Small" />
+        <Label Text="Total Expense: $2,900"/>
+        <Label Text="{Binding Expense}" FontSize="Small" />
+        <Label Text="Profit/Loss: $16,100"/>
+        <Label Text="{Binding Profit_Loss}" FontSize="Small" />
+        <Label Text="Projection: + 84 %"/>
+        <Label Text="{Binding Projection}" FontSize="Small" />
+        <microcharts:ChartView x:Name="chartView" WidthRequest="200" HeightRequest="200"/>
+        <microcharts:ChartView x:Name="lineView" WidthRequest="200" HeightRequest="200"/>
+        <microcharts:ChartView x:Name="donutView" WidthRequest="200" HeightRequest="200"/>        
+    </StackLayout>
 </ContentPage>
