@@ -31,23 +31,23 @@ namespace iAudit.Views
 
             var entries = new[]
             {
-                new Microcharts.Entry(200)
+                new Microcharts.Entry(1000)
                 {
                     Label = "January",
-                    ValueLabel = "200",
+                    ValueLabel = "3000",
                     Color = SKColor.Parse("#104950")
                     //FillColor = SKColor.Parse("#266489")
                 },
-                new Microcharts.Entry(400)
+                new Microcharts.Entry(4020)
                 {
                     Label = "February",
-                    ValueLabel = "400",
+                    ValueLabel = "7000",
                     Color = SKColor.Parse("#F7A4B9")
                 },
                 new Microcharts.Entry(-100)
                 {
                     Label = "March",
-                    ValueLabel = "-100",
+                    ValueLabel = "9000",
                     Color = SKColor.Parse("#0084b4")
                 }
             };
@@ -68,20 +68,20 @@ namespace iAudit.Views
                 new Microcharts.Entry(1000)
                 {
                     Label = "January",
-                    ValueLabel = "200",
+                    ValueLabel = "3000",
                     Color = SKColor.Parse("#104950")
                     //FillColor = SKColor.Parse("#266489")
                 },
                 new Microcharts.Entry(4020)
                 {
                     Label = "February",
-                    ValueLabel = "400",
+                    ValueLabel = "7000",
                     Color = SKColor.Parse("#F7A4B9")
                 },
                 new Microcharts.Entry(-100)
                 {
                     Label = "March",
-                    ValueLabel = "-100",
+                    ValueLabel = "9000",
                     Color = SKColor.Parse("#0084b4")
                 }
             };
@@ -94,22 +94,22 @@ namespace iAudit.Views
             {
                 new Microcharts.Entry(1000)
                 {
-                    Label = "January",
-                    ValueLabel = "200",
-                    Color = SKColor.Parse("#104950")
+                    Label = "Repairs",
+                    ValueLabel = "400",
+                    Color = SKColor.Parse("#104250")
                     //FillColor = SKColor.Parse("#266489")
                 },
                 new Microcharts.Entry(4020)
                 {
-                    Label = "February",
-                    ValueLabel = "400",
-                    Color = SKColor.Parse("#F7A4B9")
+                    Label = "Machinery",
+                    ValueLabel = "1500",
+                    Color = SKColor.Parse("#F7A9B9")
                 },
                 new Microcharts.Entry(-100)
                 {
-                    Label = "March",
-                    ValueLabel = "-100",
-                    Color = SKColor.Parse("#0084b4")
+                    Label = "Inventory",
+                    ValueLabel = "1000",
+                    Color = SKColor.Parse("#0184b4")
                 }
             };
 
