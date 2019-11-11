@@ -47,15 +47,15 @@ namespace iAudit.Views
                     Color = SKColor.Parse("#0084b4")
                 }
             };
-            var chart = new LineChart() { Entries = entries };
+
+            var chart = new BarChart() { Entries = entries };
             /*
+            var chart = new LineChart() { Entries = entries };
             var chart1 = new BarChart() { Entries = entries };
             var chart2 = new PointChart() { Entries = entries };
-            var chart3 = new LineChart() { Entries = entries };
-            var chart4 = new DonutChart() { Entries = entries };
-            var chart5 = new RadialGaugeChart() { Entries = entries };
-            var chart6 = new RadarChart() { Entries = entries };
-            var chart7 = new DonutChart() { Entries = entries };
+            var chart3 = new DonutChart() { Entries = entries };
+            var chart4 = new RadialGaugeChart() { Entries = entries };
+            var chart5 = new RadarChart() { Entries = entries };
             */
             this.chartView.Chart = chart;
         }

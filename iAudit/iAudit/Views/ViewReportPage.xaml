@@ -6,5 +6,6 @@
     xmlns:local="clr-namespace:Microcharts.Samples.Forms"
     x:Class="iAudit.Views.ViewReportPage">
 
-    <microcharts:ChartView x:Name="chartView" />
+    <microcharts:ChartView x:Name="chartView"
+                           />
 </ContentPage>
