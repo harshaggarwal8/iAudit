@@ -1,22 +1,35 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="iAudit.Views.MonthsPage">
+             x:Class="iAudit.Views.MonthsPage"
+             BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            <Button Text="January" Clicked="Jan_Clicked"/>
-            <Button Text="February" Clicked="Feb_Clicked"/>
-            <Button Text="March" Clicked="Mar_Clicked"/>
-            <Button Text="April" Clicked="Apr_Clicked"/>
-            <Button Text="May" Clicked="May_Clicked"/>
-            <Button Text="June" Clicked="Jun_Clicked"/>
-            <Button Text="July" Clicked="Jul_Clicked"/>
-            <Button Text="August" Clicked="Aug_Clicked"/>
-            <Button Text="September" Clicked="Sep_Clicked"/>
-            <Button Text="October" Clicked="Oct_Clicked"/>
-            <Button Text="November" Clicked="Nov_Clicked"/>
-            <Button Text="December" Clicked="Dec_Clicked"/>
-            <Button Text="View All" Clicked="All_Clicked"/>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="January" Clicked="Jan_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
+                <Button Text="February" Clicked="Feb_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20" Margin="50,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="March" Clicked="Mar_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
+                <Button Text="April" Clicked="Apr_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20" Margin="67,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="May" Clicked="May_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
+                <Button Text="June" Clicked="Jun_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20" Margin="75,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="July" Clicked="Jul_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
+                <Button Text="August" Clicked="Aug_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20" Margin="75,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="September" Clicked="Sep_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
+                <Button Text="October" Clicked="Oct_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20" Margin="22,0,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Button Text="November" Clicked="Nov_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
+                <Button Text="December" Clicked="Dec_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20" Margin="20,0,0,0"/>
+            </StackLayout>
+            <Button Text="View All" Clicked="All_Clicked" TextColor="DarkBlue" FontFamily="Times" FontSize="20"/>
         </StackLayout>        
     </ContentPage.Content>
 </ContentPage>

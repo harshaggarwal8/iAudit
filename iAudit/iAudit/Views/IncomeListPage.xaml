@@ -16,6 +16,7 @@
                   ItemsSource="{Binding Incomes}"
                   VerticalOptions="FillAndExpand"
                   HasUnevenRows="true"
+                  BackgroundColor="AliceBlue"
                   RefreshCommand="{Binding LoadItemsCommand}"
                   IsPullToRefreshEnabled="true"
                   IsRefreshing="{Binding IsBusy, Mode=OneWay}"
@@ -37,24 +38,32 @@
                         <StackLayout Padding="10">
                             <Label Text="{Binding IncomeName}"
                                    d:Text="{Binding .}"
+                                   TextColor="DarkBlue"
                                    LineBreakMode="NoWrap"
+                                   FontFamily="Times"
                                    Style="{DynamicResource ListItemTextStyle}"
-                                   FontSize="16" />
+                                   FontSize="26" />
                             <Label Text="{Binding Notes}"
                                    d:Text="Income notes"
                                    LineBreakMode="NoWrap"
+                                   FontFamily="Times"
+                                   TextColor="DarkSlateBlue"
                                    Style="{DynamicResource ListItemDetailTextStyle}"
-                                   FontSize="13" />
-                            <Label Text="{Binding Amount}"
-                                   d:Text="Amount"
-                                   LineBreakMode="NoWrap"
-                                   Style="{DynamicResource ListItemDetailTextStyle}"
-                                   FontSize="13" />
+                                   FontSize="23" />
                             <Label Text="{Binding Date}"
                                    d:Text="Date"
+                                   FontFamily="Times"
                                    LineBreakMode="NoWrap"
+                                   TextColor="DarkSlateBlue"
                                    Style="{DynamicResource ListItemDetailTextStyle}"
-                                   FontSize="13" />
+                                   FontSize="23" />
+                            <Label Text="{Binding Amount}"
+                                   d:Text="Amount"
+                                   FontFamily="Times"
+                                   LineBreakMode="NoWrap"
+                                   TextColor="Green"
+                                   Style="{DynamicResource ListItemDetailTextStyle}"
+                                   FontSize="23" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

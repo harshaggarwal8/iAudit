@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              x:Class="iAudit.Views.NewYearPage"
              Title="New Year">
     <ContentPage.ToolbarItems>
@@ -11,11 +12,11 @@
         <ToolbarItem Text="Add" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15">
-            <Label Text="Year Number" FontSize="Medium" />
-            <Entry Text="{Binding Year.Text}" Placeholder="Year Number" d:Text="Year number" FontSize="Small" />
-            <Label Text="Notes" FontSize="Medium" />
-            <Editor Text="{Binding Year.Description}" Placeholder="Notes" d:Text="Year notes" FontSize="Small" Margin="0" />
+        <StackLayout Spacing="20" Padding="15" Margin="50">
+            <Label Text="Year Number" FontSize="26" FontFamily="Times" TextColor="DarkBlue"/>
+            <Entry Text="{Binding Year.Text}" Placeholder="Year Number" d:Text="Year number" FontSize="16" FontFamily="Times" TextColor="BlueViolet"/>
+            <Label Text="Notes" FontSize="26" FontFamily="Times" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Year.Description}" Placeholder="Notes" d:Text="Year notes" FontSize="16" Margin="0" FontFamily="Times" TextColor="BlueViolet"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

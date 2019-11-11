@@ -4,15 +4,16 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              x:Class="iAudit.Views.SelectPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
             <Image Source="income.png" WidthRequest="75" HeightRequest="75"/>
-            <Button Text="Income Log" Clicked="Income_Clicked"/>
+            <Button Text="Income Log" Clicked="Income_Clicked" FontFamily="Times" FontSize="26" TextColor="DodgerBlue" BackgroundColor="AliceBlue"/>
             <Image Source="expense.png" WidthRequest="75" HeightRequest="75"/>
-            <Button Text="Expense Log" Clicked="Expense_Clicked"/>
+            <Button Text="Expense Log" Clicked="Expense_Clicked" FontFamily="Times" FontSize="26" TextColor="DodgerBlue" BackgroundColor="AliceBlue"/>
             <Image Source="report.png" WidthRequest="75" HeightRequest="75"/>
-            <Button Text="View Report" Clicked="ViewReport_Clicked"/>
+            <Button Text="View Report" Clicked="ViewReport_Clicked" FontFamily="Times" FontSize="26" TextColor="DodgerBlue" BackgroundColor="AliceBlue"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

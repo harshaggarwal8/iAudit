@@ -4,22 +4,23 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              x:Class="iAudit.Views.AddExpensePage"
              Title="Add Expense">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
         <ToolbarItem Text="Add" Clicked="Save_Clicked" />
     </ContentPage.ToolbarItems>
-    <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15">
-            <Label Text="Expense Title" FontSize="Medium" />
-            <Entry Text="{Binding Expense.ExpenseName}" Placeholder="Enter the title/source" d:Text="Expense Title" FontSize="Small" />
-            <Label Text="Notes" FontSize="Medium" />
-            <Editor Text="{Binding Expense.Notes}" Placeholder="Enter notes attached" d:Text="Expense notes" FontSize="Small" Margin="0" />
-            <Label Text="Amount" FontSize="Medium" />
-            <Editor Text="{Binding Expense.Amount}" d:Text="Expense Amount" Placeholder="Enter the amount in $" FontSize="Small" Margin="0" />
-            <Label Text="Date" FontSize="Medium" />
-            <Editor Text="{Binding Expense.Date}" d:Text="Date MM-DD-YYYY" Placeholder="Enter the date as MM-DD-YYY" FontSize="Small" Margin="0" />
+    <ContentPage.Content >
+        <StackLayout Spacing="20" Padding="15" BackgroundColor="AliceBlue" Margin="40">
+            <Label Text="Expense Title" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Entry Text="{Binding Expense.ExpenseName}" Placeholder="Enter the title/source" FontFamily="Times" d:Text="Expense Title" FontSize="16" TextColor="DarkRed"/>
+            <Label Text="Notes" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Expense.Notes}" Placeholder="Enter notes attached" FontFamily="Times" d:Text="Expense notes" FontSize="16" Margin="0" TextColor="DarkRed"/>
+            <Label Text="Amount" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Expense.Amount}" d:Text="Expense Amount" FontFamily="Times" Placeholder="Enter the amount in $" FontSize="16" Margin="0" TextColor="DarkRed"/>
+            <Label Text="Date" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Expense.Date}" d:Text="MM-DD-YYYY" FontFamily="Times" Placeholder="Enter the date as MM-DD-YYY" FontSize="16" Margin="0" TextColor="DarkRed"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

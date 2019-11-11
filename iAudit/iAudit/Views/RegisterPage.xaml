@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              x:Class="iAudit.Views.RegisterPage"
              Title="Register">
     <ContentPage.Content>
@@ -11,13 +12,13 @@
                      Margin="50"
                      VerticalOptions="Center"
                      HorizontalOptions="Center">
-            <Entry Text="First Name"/>
-            <Entry Text="Last Name"/>
-            <Entry Text="Email"/>
-            <Entry Text="Confirm Email"/>
-            <Entry Text="Password" IsPassword="True"/>
-            <Entry Text="Confirm Password" IsPassword="True"/>
-            <Button Text="SUBMIT" Clicked="SUBMIT_Clicked"/>
+            <Entry Text="First Name" FontFamily="Times" WidthRequest="200"/>
+            <Entry Text="Last Name" FontFamily="Times"/>
+            <Entry Text="Email" FontFamily="Times"/>
+            <Entry Text="Confirm Email" FontFamily="Times"/>
+            <Entry Text="Password" IsPassword="True" FontFamily="Times"/>
+            <Entry Text="Confirm Password" IsPassword="True" FontFamily="Times"/>
+            <Button Text="SUBMIT" Clicked="SUBMIT_Clicked" FontFamily="Times" TextColor="CornflowerBlue" FontAttributes="Bold"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,6 +15,7 @@
                   ItemsSource="{Binding Years}"
                   VerticalOptions="FillAndExpand"
                   HasUnevenRows="true"
+                  BackgroundColor="AliceBlue"
                   RefreshCommand="{Binding LoadItemsCommand}"
                   IsPullToRefreshEnabled="true"
                   IsRefreshing="{Binding IsBusy, Mode=OneWay}"
@@ -37,13 +38,17 @@
                             <Label Text="{Binding Text}"
                                    d:Text="{Binding .}"
                                    LineBreakMode="NoWrap"
+                                   FontFamily="Times"
+                                   TextColor="DarkBlue"
                                    Style="{DynamicResource ListItemTextStyle}"
-                                   FontSize="16" />
+                                   FontSize="26" />
                             <Label Text="{Binding Description}"
                                    d:Text="Year notes"
                                    LineBreakMode="NoWrap"
+                                   FontFamily="Times"
+                                   TextColor="DarkSlateBlue"
                                    Style="{DynamicResource ListItemDetailTextStyle}"
-                                   FontSize="13" />
+                                   FontSize="23" />
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

@@ -4,17 +4,18 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              x:Class="iAudit.Views.LoginPage"
              Title="{Binding Title}">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" Margin="40" Padding="40" VerticalOptions="Center" HorizontalOptions="Center">
+        <StackLayout Orientation="Vertical"  VerticalOptions="Center" HorizontalOptions="Center">
              <StackLayout Spacing="20" Padding="15" Orientation="Vertical">
                 <Image Source="@drawable/logo.png" WidthRequest="100" HeightRequest="100"/>
-                <Entry Placeholder="enter email" />
-                <Entry Placeholder="enter password" IsPassword="True" />
-                <StackLayout Spacing="20" Padding="15" Orientation="Horizontal">
-                    <Button Text="LOGIN" Clicked="LOGIN_Clicked"/>
-                    <Button Text="REGISTER" Clicked="REGISTER_Clicked"/>
+                <Entry Placeholder="enter email" FontFamily="Times" TextColor="DarkBlue"/>
+                <Entry Placeholder="enter password" IsPassword="True" FontFamily="Times" TextColor="DarkBlue"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="LOGIN" Clicked="LOGIN_Clicked" BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="100" TextColor="DarkBlue"/>
+                    <Button Text="REGISTER" Clicked="REGISTER_Clicked" BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="100" TextColor="DarkBlue"/>
                 </StackLayout>
         </StackLayout>
         </StackLayout>
