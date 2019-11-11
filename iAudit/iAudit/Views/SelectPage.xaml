@@ -7,11 +7,11 @@
              x:Class="iAudit.Views.SelectPage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
-            <Image Source="logo.png" WidthRequest="15" HeightRequest="15"/>
+            <Image Source="income.png" WidthRequest="75" HeightRequest="75"/>
             <Button Text="Income Log" Clicked="Income_Clicked"/>
-            <Image Source="logo.png" WidthRequest="15" HeightRequest="15"/>
+            <Image Source="expense.png" WidthRequest="75" HeightRequest="75"/>
             <Button Text="Expense Log" Clicked="Expense_Clicked"/>
-            <Image Source="logo.png" WidthRequest="15" HeightRequest="15"/>
+            <Image Source="report.png" WidthRequest="75" HeightRequest="75"/>
             <Button Text="View Report" Clicked="ViewReport_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
