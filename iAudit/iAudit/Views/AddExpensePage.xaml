@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
+             x:Class="iAudit.Views.AddExpensePage"
+             Title="Add Expense">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Add" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content >
+        <StackLayout Spacing="20" Padding="15" BackgroundColor="AliceBlue" Margin="40">
+            <Label Text="Expense Title" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Entry Text="{Binding Expense.ExpenseName}" Placeholder="Enter the title/source" FontFamily="Times" d:Text="Expense Title" FontSize="16" TextColor="DarkRed"/>
+            <Label Text="Notes" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Expense.Notes}" Placeholder="Enter notes attached" FontFamily="Times" d:Text="Expense notes" FontSize="16" Margin="0" TextColor="DarkRed"/>
+            <Label Text="Amount" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Expense.Amount}" d:Text="Expense Amount" FontFamily="Times" Placeholder="Enter the amount in $" FontSize="16" Margin="0" TextColor="DarkRed"/>
+            <Label Text="Date" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Expense.Date}" d:Text="MM-DD-YYYY" FontFamily="Times" Placeholder="Enter the date as MM-DD-YYY" FontSize="16" Margin="0" TextColor="DarkRed"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

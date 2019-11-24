@@ -119,6 +119,22 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo.png" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-1.png" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-2.png" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income.jpg" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-1.jpg" />
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-2.jpg" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report.png" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-1.png" />
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-2.png" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense.png" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-1.png" />
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -139,5 +155,20 @@
       <Project>{7D435235-95E1-484F-95BF-DC32213DCBC7}</Project>
       <Name>iAudit</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets.xcassets\Splash.imageset\" />
+    <Folder Include="Assets.xcassets\Income1.imageset\" />
+    <Folder Include="Assets.xcassets\Expense1.imageset\" />
+    <Folder Include="Assets.xcassets\Report1.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\expense.png" />
+    <AndroidResource Include="Resources\income.jpg" />
+    <AndroidResource Include="Resources\logo.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\report.png" />
   </ItemGroup>
 </Project>

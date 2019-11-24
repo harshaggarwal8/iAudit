@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
+             x:Class="iAudit.Views.AddIncomePage"
+             Title="Add Income">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
+        <ToolbarItem Text="Add" Clicked="Save_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15" BackgroundColor="AliceBlue" Margin="40">
+            <Label Text="Income Title" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Entry Text="{Binding Income.IncomeName}" d:Text="Income Title" FontSize="16" FontFamily="Times" TextColor="Green"/>
+            <Label Text="Notes" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Income.Notes}" d:Text="Income notes" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>
+            <Label Text="Amount" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Income.Amount}" d:Text="Income Amount" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>
+            <Label Text="Date" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+            <Editor Text="{Binding Income.Date}" d:Text="Date MM-DD-YYYY" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

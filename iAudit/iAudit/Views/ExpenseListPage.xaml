@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="iAudit.Views.ExpenseListPage"
+             Title="Expense Log"
+             x:Name="ExpenseLog">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Clicked="AddExpense_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+        <ListView x:Name="ExpenseListView"
+                  ItemsSource="{Binding Expenses}"
+                  VerticalOptions="FillAndExpand"
+                  HasUnevenRows="true"
+                  BackgroundColor="AliceBlue"
+                  RefreshCommand="{Binding LoadItemsCommand}"
+                  IsPullToRefreshEnabled="true"
+                  IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                  CachingStrategy="RecycleElement"
+                  ItemSelected="OnItemSelected">
+            <d:ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>First Expense</x:String>
+                    <x:String>Second Expense</x:String>
+                    <x:String>Third Expense</x:String>
+                    <x:String>Fourth Expense</x:String>
+                    <x:String>Fifth Expense</x:String>
+                    <x:String>Sixth Expense</x:String>
+                </x:Array>
+            </d:ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding ExpenseName}"
+                                   d:Text="{Binding .}"
+                                   TextColor="DarkBlue"
+                                   FontFamily="Times"
+                                   LineBreakMode="NoWrap"
+                                   Style="{DynamicResource ListItemTextStyle}"
+                                   FontSize="26" />
+                            <Label Text="{Binding Notes}"
+                                   d:Text="Income notes"
+                                   TextColor="DarkSlateBlue"
+                                   FontFamily="Times"
+                                   LineBreakMode="NoWrap"
+                                   Style="{DynamicResource ListItemDetailTextStyle}"
+                                   FontSize="23" />
+                            <Label Text="{Binding Date}"
+                                   d:Text="Date"
+                                   TextColor="DarkSlateBlue"
+                                   FontFamily="Times"
+                                   LineBreakMode="NoWrap"
+                                   Style="{DynamicResource ListItemDetailTextStyle}"
+                                   FontSize="23" />
+                            <Label Text="{Binding Amount}"
+                                   d:Text="Amount"
+                                   LineBreakMode="NoWrap"
+                                   FontFamily="Times"
+                                   TextColor="DarkRed"
+                                   Style="{DynamicResource ListItemDetailTextStyle}"
+                                   FontSize="23" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

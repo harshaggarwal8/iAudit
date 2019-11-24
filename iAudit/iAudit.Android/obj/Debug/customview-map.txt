@@ -26,10 +26,13 @@ external-path;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/
 foreground;obj/Debug/res/mipmap-anydpi-v26/icon.xml
 foreground;obj/Debug/res/mipmap-anydpi-v26/icon_round.xml
 FrameLayout;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/layout/bottomtablayout.xml
+ImageView;obj/Debug/res/layout/splash.xml
 item;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/values/styles.xml
 item;obj/Debug/res/values/styles.xml
 LinearLayout;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/layout/bottomtablayout.xml
+md58432a647068b097f9637064b8985a5e0.FormsViewPager;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/layout/rootlayout.xml
 paths;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/38/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
+RelativeLayout;obj/Debug/res/layout/splash.xml
 resources;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/values/styles.xml
 resources;obj/Debug/res/values/colors.xml
 resources;obj/Debug/res/values/styles.xml
@@ -39,6 +42,7 @@ set;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/
 set;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/anim/exittoright.xml
 style;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/values/styles.xml
 style;obj/Debug/res/values/styles.xml
+TextView;obj/Debug/res/layout/splash.xml
 translate;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/anim/enterfromleft.xml
 translate;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/anim/enterfromright.xml
 translate;/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Debug/lp/39/jl/res/anim/exittoleft.xml

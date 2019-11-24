@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!--layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/splash_background" /> 
+    <item android:gravity="center">        
+        <bitmap android:src="@drawable/logo" />        
+    </item>
+    
+<style name="Splash" parent="Theme.AppCompat.Light.NoActionBar">        
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>        
+</style>
+</layer-list-->
+
+<RelativeLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    ⁢<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:src="@drawable/logo" />
+
+    ⁢<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/imageView2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="48dp"
+    android:text="Smart Wally"
+    android:textColor="#000000"
+    android:textSize="40dp" />
+
+    ⁢</RelativeLayout>

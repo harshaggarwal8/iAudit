@@ -866,3 +866,6 @@
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.Android/obj/Release/stamp/_GenerateJavaStubs.stamp
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.Android/obj/Release/stamp/_GeneratePackageManagerJava.stamp
 /Users/sonialopez/Documents/GitHub/iAudit/iAudit/iAudit.Android/obj/Release/stamp/_ResolveLibraryProjectImports.stamp
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/drawable/logo.png
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/android/src/md5cde70302dc2bba8b75dbc97868d7f520/SplashActivity.java
+/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/Release/res/layout/splash.xml
