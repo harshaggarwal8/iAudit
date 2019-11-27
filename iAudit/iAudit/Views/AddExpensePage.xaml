@@ -9,10 +9,11 @@
              Title="Add Expense">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
-        <ToolbarItem Text="Add" Clicked="Save_Clicked" />
+        <ToolbarItem Text="Add" Clicked="Add_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content >
         <StackLayout Spacing="20" Padding="15" BackgroundColor="AliceBlue" Margin="40">
+ <!--
             <Label Text="Expense Title" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
             <Entry Text="{Binding Expense.ExpenseName}" Placeholder="Enter the title/source" FontFamily="Times" d:Text="Expense Title" FontSize="16" TextColor="DarkRed"/>
             <Label Text="Notes" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
@@ -21,6 +22,21 @@
             <Editor Text="{Binding Expense.Amount}" d:Text="Expense Amount" FontFamily="Times" Placeholder="Enter the amount in $" FontSize="16" Margin="0" TextColor="DarkRed"/>
             <Label Text="Date" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
             <Editor Text="{Binding Expense.Date}" d:Text="MM-DD-YYYY" FontFamily="Times" Placeholder="Enter the date as MM-DD-YYY" FontSize="16" Margin="0" TextColor="DarkRed"/>
+        -->
+                <Entry x:Name="txtIncomeName" Placeholder="Income Name" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtNotes" Placeholder="Notes"  FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtAmount" Placeholder="Amount" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtYear" Placeholder = "Year" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtMonth" Placeholder = "Month" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtDay" Placeholder = "Day" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtCategory" Placeholder = "Category" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <ListView x:Name="lstExpense">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>      
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -13,7 +13,8 @@ namespace iAudit.Views
             InitializeComponent();
         }
 
-        public MonthsPage(Year year)
+//        public MonthsPage(Year year)
+        public MonthsPage(int year)
         {
             InitializeComponent();
             currentYear = year;

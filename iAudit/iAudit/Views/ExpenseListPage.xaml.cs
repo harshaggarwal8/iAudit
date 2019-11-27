@@ -6,10 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using Firebase.Database;
+using Firebase.Database.Query;
+using iAudit.Helper;
+using System.Linq;
+using System.Text;
 using iAudit.Models;
 using iAudit.Views;
 using iAudit.ViewModels;
+
 namespace iAudit.Views
 {
     [DesignTimeVisible(false)]

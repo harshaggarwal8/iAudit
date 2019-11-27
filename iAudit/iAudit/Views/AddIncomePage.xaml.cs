@@ -3,11 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using Firebase.Database;
+using Firebase.Database.Query;
+using iAudit.Helper;
 using iAudit.Models;
+using iAudit.Views;
+using System.Linq;
+using System.Text;
 
 namespace iAudit.Views
 {
+    FirebaseHelper firebaseHelper = new FirebaseHelper();
+
     [DesignTimeVisible(false)]
     public partial class AddIncomePage : ContentPage
     {
@@ -17,39 +24,30 @@ namespace iAudit.Views
         public AddIncomePage()
         {
             InitializeComponent();
-            income = new Income
-            {
-                IncomeName = "Expense",
-                Notes = "No Notes.",
-                Date = "MM-DD-YYYY",
-                Amount = 000.00,
-                Category = "Income"
-            };
-
-            BindingContext = this;
-        }
-        
-		public AddIncomePage(Year year, String month)
-		{
-            InitializeComponent();
-
-            income = new Income
-            {
-                IncomeName = "Income",
-                Notes = "No Notes.",
-                Date = "MM-DD-YYYY",
-                Year = year,
-                Month = month,
-                Amount = 000.00,
-                Category = "Income"
-            };
-
-            BindingContext = this;
         }
 
-        async void Save_Clicked(object sender, EventArgs e)
+        protected async override void OnAppearing()
         {
-            MessagingCenter.Send(this, "AddIncome", income);
+
+            base.OnAppearing();
+            var allIncome = await firebaseHelper.GetAllIncome();
+            lstIncome.IncomeSource = allIncome;
+        }
+
+        async void Add_Clicked(object sender, EventArgs e)
+        {
+            await firebaseHelper.AddIncome(txtIncomeName.Text, txtNotes.Text, Convert.toDouble(txtAmount.Text), Convert.ToInt32(txtYear.Text), txtMonth.text, Convert.ToInt32(txtDay.Text), txtCategory.Text);
+            txtIncomeName.Text = string.Empty;
+            txtNotes.Text = string.Empty;
+            txtAmount.Text = string.Empty;
+            txtYear.Text = string.Empty;
+            txtMonth.Text = string.Empty;
+            txtDay.Text = string.Empty;
+            txtCategory.Text = string.Empty;
+            await DisplayAlert("Success", "Income Added Successfully", "OK");
+            var allItems = await firebaseHelper.GetAllIncome();
+            lstIncome.IncomeSource = allIncome;            
+           // MessagingCenter.Send(this, "AddIncome", income);
             await Navigation.PopModalAsync();
         }
 

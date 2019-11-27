@@ -13,14 +13,30 @@
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15" BackgroundColor="AliceBlue" Margin="40">
-            <Label Text="Income Title" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
+        <!--    <Label Text="Income Title" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
             <Entry Text="{Binding Income.IncomeName}" d:Text="Income Title" FontSize="16" FontFamily="Times" TextColor="Green"/>
             <Label Text="Notes" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
             <Editor Text="{Binding Income.Notes}" d:Text="Income notes" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>
             <Label Text="Amount" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
             <Editor Text="{Binding Income.Amount}" d:Text="Income Amount" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>
             <Label Text="Date" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
-            <Editor Text="{Binding Income.Date}" d:Text="Date MM-DD-YYYY" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>
+            <Editor Text="{Binding Income.Date}" d:Text="Date MM-DD-YYYY" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"/>-->
+
+<!-- Linda testing section -->
+                <Entry x:Name="txtIncomeName" Placeholder="Income Name" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
+                <Entry x:Name="txtNotes" Placeholder="Notes" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
+                <Entry x:Name="txtAmount" Placeholder="Amount" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
+                <Entry x:Name="txtYear" Placeholder = "Year" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
+                <Entry x:Name="txtMonth" Placeholder = "Month" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
+                <Entry x:Name="txtDay" Placeholder = "Day";
+                <Entry x:Name="txtCategory" Placeholder = "Category" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>  
+                <ListView x:Name="lstIncome">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding Name}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
