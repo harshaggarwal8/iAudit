@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using Xamarin.Essentials;
+using Xamarin.Essentials; //Email - A Xamarin.Essentials feature
 
 namespace iAudit.Models
 {
@@ -28,7 +28,7 @@ namespace iAudit.Models
                 var file = Path.Combine(FileSystem.CacheDirectory, fn);
                 File.WriteAllText(file, "Hello World");
 
-                message.Attachments.Add(new EmailAttachment(file));
+                message.Attachments.Add(new EmailAttachment(file)); //adding attachment to the email here
                 await Email.ComposeAsync(message);
             }
             catch (FeatureNotSupportedException fbsEx)
