@@ -18,7 +18,16 @@
         <Label Text="{Binding Projection}" FontSize="Small" />
         <microcharts:ChartView x:Name="chartView" WidthRequest="200" HeightRequest="200"/>
         <microcharts:ChartView x:Name="lineView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="donutView" WidthRequest="200" HeightRequest="200"/>        
+        <microcharts:ChartView x:Name="donutView" WidthRequest="200" HeightRequest="200"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <Button Text="Email Report!"
+                Clicked="EMAIL_Clicked"
+                BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="300" HeightRequest="60" TextColor="DarkBlue"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" />
+        </StackLayout>
+
     </StackLayout>
     </ScrollView>
 </ContentPage>

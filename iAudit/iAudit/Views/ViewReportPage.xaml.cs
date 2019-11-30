@@ -121,7 +121,22 @@ namespace iAudit.Views
             Expense = 1200;
             Profit_Loss = Income - Expense;
             Projection = Profit_Loss / Income * 100;
-            
+
+            /*
+            //Send email body --
+            List<string> recipient = new List<string>();
+            recipient.Add("officialharshagg8@gmail.com"); //Right now, hardcoding my email for recieving the data
+            */
+
+
+        }
+        async void EMAIL_Clicked(object sender, EventArgs e) //When user wants to get an email of the report
+        {
+
+            //if accepted go here
+            await Navigation.PushAsync(new ViewReportPage()); //for testing button, add email functionality here
+
+            //else make them fix
         }
         public ViewReportPage(Year year)
         {
