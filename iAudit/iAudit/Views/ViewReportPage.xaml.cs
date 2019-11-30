@@ -5,6 +5,9 @@ using Xamarin.Forms;
 using Microcharts;
 using SkiaSharp;
 using System.Linq;
+using System.Threading.Tasks;
+using System.IO;
+using Xamarin.Essentials;
 
 namespace iAudit.Views
 {
@@ -25,7 +28,7 @@ namespace iAudit.Views
         {
             InitializeComponent();
         }
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
 
@@ -122,12 +125,12 @@ namespace iAudit.Views
             Profit_Loss = Income - Expense;
             Projection = Profit_Loss / Income * 100;
 
-            /*
+            
             //Send email body --
             List<string> recipient = new List<string>();
-            recipient.Add("officialharshagg8@gmail.com"); //Right now, hardcoding my email for recieving the data
-            */
-
+            recipient.Add("harsh.aggarwal@mavs.uta.edu"); //Right now, hardcoding my email for recieving the data
+            recipient.Add("officialharshagg8@gmail.com");
+            await SendEmail("iAudit Report", "Here's your report-", recipient);
 
         }
         async void EMAIL_Clicked(object sender, EventArgs e) //When user wants to get an email of the report
@@ -141,6 +144,47 @@ namespace iAudit.Views
         public ViewReportPage(Year year)
         {
             InitializeComponent();
+        }
+
+
+
+
+
+
+
+
+        ////////
+        /////////////
+        ////////
+        ///
+        public async Task SendEmail(string subject, string body, List<string> recipients)
+        {
+            try
+            {
+                var message = new EmailMessage
+                {
+                    Subject = subject,
+                    Body = body,
+                    To = recipients,
+                    //Cc = ccRecipients,
+                    //Bcc = bccRecipients
+                };
+
+                //var fn = "Attachment.txt";
+                //var file = Path.Combine(FileSystem.CacheDirectory, fn);
+                //File.WriteAllText(file, "Hello World");
+
+                //message.Attachments.Add(new EmailAttachment(file)); //adding attachment to the email here
+                await Email.ComposeAsync(message);
+            }
+            catch (FeatureNotSupportedException fbsEx)
+            {
+                // Email is not supported on this device
+            }
+            catch (Exception ex)
+            {
+                // Some other exception occurred
+            }
         }
     }
 }
