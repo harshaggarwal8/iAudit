@@ -18,7 +18,7 @@ namespace iAudit.Views
     [DesignTimeVisible(false)]
     public partial class IncomeListPage : ContentPage
     {
-        Year currentYear;
+        int currentYear;
         String currentMonth;
         IncomeViewModel viewModel;
 
@@ -28,7 +28,7 @@ namespace iAudit.Views
             BindingContext = viewModel = new IncomeViewModel();
         }
 
-        public IncomeListPage(Year year, String month)
+        public IncomeListPage(int year, String month)
         {
             InitializeComponent();
             BindingContext = viewModel = new IncomeViewModel();

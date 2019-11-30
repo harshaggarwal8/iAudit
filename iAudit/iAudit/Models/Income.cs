@@ -1,10 +1,12 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Text;
+using iAudit.Views;
 using Xamarin.Forms;
 
 namespace iAudit.Models
 {
-    public class Income 
+    public class Income
     {
      //   public string Id { get; set; }
         public string IncomeName { get; set; }

@@ -15,7 +15,7 @@ namespace iAudit.Services
 
         public MockDataStore()
         {
-            items = new List<Item>()
+         /*   items = new List<Item>()
             {
                 new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
@@ -33,31 +33,31 @@ namespace iAudit.Services
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2022", Description="No notes" },
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2023", Description="No notes" }
             };
-
+            */
             incomes = new List<Income>()
             {
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Date = "10-15-2019", Month = "October" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Date = "10-07-2019", Month = "October" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of October 1st", Date = "10-01-2019", Month = "October" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Date = "09-15-2019", Month = "September" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of September 7th", Date = "09-07-2019", Month = "September" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of September 1st", Date = "09-01-2019", Month = "September" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Date = "08-15-2019", Month = "August" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of August 7th", Date = "08-07-2019", Month = "August" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Date = "08-01-2019", Month = "August" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Date = "07-07-2019", Month = "July" },
-                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
+                new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Day = 05, Month = "October" },
+                new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Day = 07, Month = "October" },
+                new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of October 1st", Day = 01, Month = "October" },
+                new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Day = 15, Month = "September" },
+                new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of September 7th", Day = 07, Month = "September" },
+                new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of September 1st", Day = 01, Month = "September" },
+                new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Day = 15, Month = "August" },
+                new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of August 7th", Day = 07, Month = "August" },
+                new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Day = 01, Month = "August" },
+                new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Day = 15, Month = "July" },
+                new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Day = 07, Month = "July" },
+                new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Day = 01, Month = "July" },
             };
 
             expenses = new List<Expense>()
             {
-                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "10-15-2019", Month = "October" },
-                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "10-03-2019", Month = "October" },
-                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "09-15-2019", Month = "September" },
-                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "09-13-2019", Month = "September" },
-                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "08-15-2019", Month = "August" },
-                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "08-13-2019", Month = "August" }
+                new Expense {ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Day = 15, Month = "October" },
+                new Expense {ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Day = 03, Month = "October" },
+                new Expense {ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Day = 15, Month = "September" },
+                new Expense {ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Day = 13, Month = "September" },
+                new Expense { ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Day = 08, Month = "August" },
+                new Expense { ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Day = 29, Month = "August" }
             };
         }
 
@@ -71,7 +71,7 @@ namespace iAudit.Services
 
         public async Task<bool> UpdateItemAsync(Item item)
         {
-            var oldItem = items.Where((Item arg) => arg.Id == item.Id).FirstOrDefault();
+            var oldItem = items.Where((Item arg) => arg.ItemId == item.ItemId).FirstOrDefault();
             items.Remove(oldItem);
             items.Add(item);
 
@@ -80,7 +80,7 @@ namespace iAudit.Services
 
         public async Task<bool> DeleteItemAsync(string id)
         {
-            var oldItem = items.Where((Item arg) => arg.Id == id).FirstOrDefault();
+            var oldItem = items.Where((Item arg) => arg.ItemId == id).FirstOrDefault();
             items.Remove(oldItem);
 
             return await Task.FromResult(true);
@@ -88,7 +88,7 @@ namespace iAudit.Services
 
         public async Task<Item> GetItemAsync(string id)
         {
-            return await Task.FromResult(items.FirstOrDefault(s => s.Id == id));
+            return await Task.FromResult(items.FirstOrDefault(s => s.ItemId == id));
         }
 
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
@@ -139,7 +139,7 @@ namespace iAudit.Services
 
         public async Task<bool> UpdateIncomeAsync(Income income)
         {
-            var oldItem = incomes.Where((Income arg) => arg.Id == income.Id).FirstOrDefault();
+            var oldItem = incomes.Where((Income arg) => arg.IncomeName == income.IncomeName).FirstOrDefault();
             incomes.Remove(oldItem);
             incomes.Add(income);
 
@@ -148,7 +148,7 @@ namespace iAudit.Services
 
         public async Task<bool> DeleteIncomeAsync(string id)
         {
-            var oldItem = incomes.Where((Income arg) => arg.Id == id).FirstOrDefault();
+            var oldItem = incomes.Where((Income arg) => arg.IncomeName == id).FirstOrDefault();
             incomes.Remove(oldItem);
 
             return await Task.FromResult(true);
@@ -156,7 +156,7 @@ namespace iAudit.Services
 
         public async Task<Income> GetIncomeAsync(string id)
         {
-            return await Task.FromResult(incomes.FirstOrDefault(s => s.Id == id));
+            return await Task.FromResult(incomes.FirstOrDefault(s => s.IncomeName == id));
         }
 
         public async Task<IEnumerable<Income>> GetIncomeAsync(bool forceRefresh = false)
@@ -173,7 +173,7 @@ namespace iAudit.Services
 
         public async Task<bool> UpdateExpenseAsync(Expense expense)
         {
-            var oldItem = expenses.Where((Expense arg) => arg.Id == expense.Id).FirstOrDefault();
+            var oldItem = expenses.Where((Expense arg) => arg.ExpenseName == expense.ExpenseName).FirstOrDefault();
             expenses.Remove(oldItem);
             expenses.Add(expense);
 
@@ -182,7 +182,7 @@ namespace iAudit.Services
 
         public async Task<bool> DeleteExpenseAsync(string id)
         {
-            var oldItem = expenses.Where((Expense arg) => arg.Id == id).FirstOrDefault();
+            var oldItem = expenses.Where((Expense arg) => arg.ExpenseName == id).FirstOrDefault();
             expenses.Remove(oldItem);
 
             return await Task.FromResult(true);
@@ -190,7 +190,7 @@ namespace iAudit.Services
 
         public async Task<Expense> GetExpenseAsync(string id)
         {
-            return await Task.FromResult(expenses.FirstOrDefault(s => s.Id == id));
+            return await Task.FromResult(expenses.FirstOrDefault(s => s.ExpenseName == id));
         }
 
         public async Task<IEnumerable<Expense>> GetExpenseAsync(bool forceRefresh = false)

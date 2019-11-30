@@ -29,7 +29,7 @@ namespace iAudit.Views
         {
 
             //if accepted go here
-            await Navigation.PushAsync(new YearsPage());
+            await Navigation.PushAsync(new AddExpensePage());
 
             //else make them fix
         }

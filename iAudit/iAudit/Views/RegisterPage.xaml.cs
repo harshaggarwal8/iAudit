@@ -15,8 +15,8 @@ namespace iAudit.Views
         async void SUBMIT_Clicked(object sender, EventArgs e)
         {
             base.OnBackButtonPressed();
-            //   return true;
-            //await Navigation.PushAsync(new LoginPage());
+        //      return true;
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }

@@ -13,12 +13,13 @@ using System.Text;
 
 namespace iAudit.Views
 {
-    FirebaseHelper firebaseHelper = new FirebaseHelper();
-
     [DesignTimeVisible(false)]
     public partial class AddIncomePage : ContentPage
     {
-        
+        FirebaseHelper firebaseHelper = new FirebaseHelper();
+        private int currentYear;
+        private string currentMonth;
+
         public Income income { get; set; }
         
         public AddIncomePage()
@@ -26,17 +27,23 @@ namespace iAudit.Views
             InitializeComponent();
         }
 
+        public AddIncomePage(int currentYear, string currentMonth)
+        {
+            this.currentYear = currentYear;
+            this.currentMonth = currentMonth;
+        }
+
         protected async override void OnAppearing()
         {
 
             base.OnAppearing();
             var allIncome = await firebaseHelper.GetAllIncome();
-            lstIncome.IncomeSource = allIncome;
-        }
+           //lstIncome.IncomeSource = allIncome;
+        } 
 
         async void Add_Clicked(object sender, EventArgs e)
         {
-            await firebaseHelper.AddIncome(txtIncomeName.Text, txtNotes.Text, Convert.toDouble(txtAmount.Text), Convert.ToInt32(txtYear.Text), txtMonth.text, Convert.ToInt32(txtDay.Text), txtCategory.Text);
+            await firebaseHelper.AddIncome(txtIncomeName.Text, txtNotes.Text, Convert.ToDouble(txtAmount.Text), Convert.ToInt32(txtYear.Text), txtMonth.Text, Convert.ToInt32(txtDay.Text), txtCategory.Text);
             txtIncomeName.Text = string.Empty;
             txtNotes.Text = string.Empty;
             txtAmount.Text = string.Empty;
@@ -46,7 +53,7 @@ namespace iAudit.Views
             txtCategory.Text = string.Empty;
             await DisplayAlert("Success", "Income Added Successfully", "OK");
             var allItems = await firebaseHelper.GetAllIncome();
-            lstIncome.IncomeSource = allIncome;            
+          //  lstIncome.IncomeSource = allIncome;            
            // MessagingCenter.Send(this, "AddIncome", income);
             await Navigation.PopModalAsync();
         }

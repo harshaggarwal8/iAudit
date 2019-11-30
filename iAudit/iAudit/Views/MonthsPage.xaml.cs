@@ -7,13 +7,11 @@ namespace iAudit.Views
 {
     public partial class MonthsPage : ContentPage
     {
-        Year currentYear;
+        int currentYear;
         public MonthsPage()
         {
             InitializeComponent();
         }
-
-//        public MonthsPage(Year year)
         public MonthsPage(int year)
         {
             InitializeComponent();

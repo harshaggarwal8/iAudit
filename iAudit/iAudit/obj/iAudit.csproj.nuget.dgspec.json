@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj": {}
+    "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj": {}
   },
   "projects": {
-    "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj": {
+    "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj",
+        "projectUniqueName": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj",
         "projectName": "iAudit",
-        "projectPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj",
-        "packagesPath": "/Users/harshaggarwal/.nuget/packages/",
-        "outputPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/",
+        "projectPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj",
+        "packagesPath": "C:\\Users\\linph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/harshaggarwal/.config/NuGet/NuGet.Config"
+          "C:\\Users\\linph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,6 +43,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
             "Microcharts": {
               "target": "Package",
               "version": "[0.7.1, )"
@@ -59,7 +67,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.848062, )"
+              "version": "[4.3.0.991211, )"
             }
           },
           "imports": [
@@ -72,7 +80,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

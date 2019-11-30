@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/iAudit.Android.csproj": {}
+    "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit.Android\\iAudit.Android.csproj": {}
   },
   "projects": {
-    "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/iAudit.Android.csproj": {
+    "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit.Android\\iAudit.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/iAudit.Android.csproj",
+        "projectUniqueName": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit.Android\\iAudit.Android.csproj",
         "projectName": "iAudit.Android",
-        "projectPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/iAudit.Android.csproj",
-        "packagesPath": "/Users/harshaggarwal/.nuget/packages/",
-        "outputPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit.Android/obj/",
+        "projectPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit.Android\\iAudit.Android.csproj",
+        "packagesPath": "C:\\Users\\linph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "/Users/harshaggarwal/.config/NuGet/NuGet.Config"
+          "C:\\Users\\linph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj": {
-                "projectPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj"
+              "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj": {
+                "projectPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj"
               }
             }
           }
@@ -36,41 +42,61 @@
       "frameworks": {
         "monoandroid90": {
           "dependencies": {
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
             "Xamarin.Android.Support.Core.Utils": {
               "target": "Package",
-              "version": "[28.0.0.1, )"
+              "version": "[28.0.0.3, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.1, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.709249, )"
+              "version": "[4.3.0.991211, )"
+            },
+            "Xamarin.GooglePlayServices.Base": {
+              "target": "Package",
+              "version": "[71.1610.0, )"
+            },
+            "Xamarin.GooglePlayServices.Basement": {
+              "target": "Package",
+              "version": "[71.1620.0, )"
+            },
+            "Xamarin.GooglePlayServices.Tasks": {
+              "target": "Package",
+              "version": "[71.1601.0, )"
             }
           }
         }
       }
     },
-    "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj": {
+    "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj",
+        "projectUniqueName": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj",
         "projectName": "iAudit",
-        "projectPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/iAudit.csproj",
-        "packagesPath": "/Users/harshaggarwal/.nuget/packages/",
-        "outputPath": "/Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/",
+        "projectPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\iAudit.csproj",
+        "packagesPath": "C:\\Users\\linph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\linph\\Documents\\GitHub\\iAudit\\iAudit\\iAudit\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/harshaggarwal/.config/NuGet/NuGet.Config"
+          "C:\\Users\\linph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -87,6 +113,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
             "Microcharts": {
               "target": "Package",
               "version": "[0.7.1, )"
@@ -107,7 +137,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.2.0.848062, )"
+              "version": "[4.3.0.991211, )"
             }
           },
           "imports": [
@@ -120,7 +150,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

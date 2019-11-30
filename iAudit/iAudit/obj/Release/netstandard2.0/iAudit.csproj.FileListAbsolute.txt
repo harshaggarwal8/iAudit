@@ -50,3 +50,6 @@
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/IncomeListPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/SelectPage.xaml.g.cs
 /Users/harshaggarwal/Desktop/CSE3311/iAudit/iAudit/iAudit/obj/Release/netstandard2.0/Views/ViewReportPage.xaml.g.cs
+C:\Users\linph\Documents\GitHub\iAudit\iAudit\iAudit\obj\Release\netstandard2.0\iAudit.dll
+C:\Users\linph\Documents\GitHub\iAudit\iAudit\iAudit\obj\Release\netstandard2.0\ref\iAudit.dll
+C:\Users\linph\Documents\GitHub\iAudit\iAudit\iAudit\obj\Release\netstandard2.0\iAudit.pdb

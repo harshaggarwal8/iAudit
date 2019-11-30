@@ -25,11 +25,11 @@ namespace iAudit.Views
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var year = args.SelectedItem as Year;
+        /*    int year = args.SelectedItem as int;
             if (year == null)
                 return;
-
-            await Navigation.PushAsync(new MonthsPage(year));
+                */
+            await Navigation.PushAsync(new MonthsPage());
 
             // Manually deselect item.
             YearsListView.SelectedItem = null;
@@ -37,7 +37,7 @@ namespace iAudit.Views
 
         async void AddItem_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new NewYearPage()));
+            await Navigation.PushModalAsync(new NewYearPage());
         }
 
         protected override void OnAppearing()

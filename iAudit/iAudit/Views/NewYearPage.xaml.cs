@@ -12,6 +12,7 @@ namespace iAudit.Views
     public partial class NewYearPage : ContentPage
     {
         public Year Year { get; set; }
+        public int year;
         public NewYearPage()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace iAudit.Views
                 Text = "Year Number",
                 Description = "No Notes."
             };
-
+            year = Convert.ToInt32(Year.Text);
             BindingContext = this;
         }
 

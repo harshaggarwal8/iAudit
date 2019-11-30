@@ -9,7 +9,7 @@
              Title="Add Income">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
-        <ToolbarItem Text="Add" Clicked="Save_Clicked" />
+        <ToolbarItem Text="Add" Clicked="Add_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15" BackgroundColor="AliceBlue" Margin="40">
@@ -28,7 +28,7 @@
                 <Entry x:Name="txtAmount" Placeholder="Amount" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
                 <Entry x:Name="txtYear" Placeholder = "Year" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
                 <Entry x:Name="txtMonth" Placeholder = "Month" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
-                <Entry x:Name="txtDay" Placeholder = "Day";
+                <Entry x:Name="txtDay" Placeholder = "Day" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>
                 <Entry x:Name="txtCategory" Placeholder = "Category" FontSize="16" Margin="0" FontFamily="Times" TextColor="Green"></Entry>  
                 <ListView x:Name="lstIncome">
                     <ListView.ItemTemplate>

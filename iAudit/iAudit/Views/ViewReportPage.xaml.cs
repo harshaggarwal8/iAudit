@@ -21,7 +21,7 @@ namespace iAudit.Views
             InitializeComponent();
         }
 
-        public ViewReportPage(Year year, String month)
+        public ViewReportPage(int year, String month)
         {
             InitializeComponent();
         }
@@ -123,7 +123,7 @@ namespace iAudit.Views
             Projection = Profit_Loss / Income * 100;
             
         }
-        public ViewReportPage(Year year)
+        public ViewReportPage(int year)
         {
             InitializeComponent();
         }

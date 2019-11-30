@@ -9,8 +9,6 @@ using Xamarin.Forms.Xaml;
 using Firebase.Database;
 using Firebase.Database.Query;
 using iAudit.Helper;
-using System.Linq;
-using System.Text;
 using iAudit.Models;
 using iAudit.Views;
 using iAudit.ViewModels;
@@ -20,7 +18,7 @@ namespace iAudit.Views
     [DesignTimeVisible(false)]
     public partial class ExpenseListPage : ContentPage
     {
-        Year currentYear;
+        int currentYear;
         String currentMonth;
         ExpenseViewModel viewModel;
         public ExpenseListPage()
@@ -29,7 +27,7 @@ namespace iAudit.Views
             BindingContext = viewModel = new ExpenseViewModel();
         }
 
-        public ExpenseListPage(Year year, String month)
+        public ExpenseListPage(int year, String month)
         {
             InitializeComponent();
             BindingContext = viewModel = new ExpenseViewModel(); 

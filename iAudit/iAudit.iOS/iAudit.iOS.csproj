@@ -119,22 +119,54 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
-    <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo.png" />
-    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-1.png" />
-    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-2.png" />
-    <ImageAsset Include="Assets.xcassets\Income1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Income1.imageset\income.jpg" />
-    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-1.jpg" />
-    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-2.jpg" />
-    <ImageAsset Include="Assets.xcassets\Expense1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Report1.imageset\Contents.json" />
-    <ImageAsset Include="Assets.xcassets\Report1.imageset\report.png" />
-    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-1.png" />
-    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-2.png" />
-    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense.png" />
-    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-1.png" />
-    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-2.png" />
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Splash.imageset\iAudit_logo-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-1.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Income1.imageset\income-2.jpg">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Report1.imageset\report-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Expense1.imageset\expense-2.png">
+      <Visible>false</Visible>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -145,9 +177,12 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
-    <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.21.8" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
+    <PackageReference Include="FirebaseDatabase.net">
+      <Version>4.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
+    <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.21.9" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -156,18 +191,15 @@
       <Name>iAudit</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets.xcassets\Splash.imageset\" />
-    <Folder Include="Assets.xcassets\Income1.imageset\" />
-    <Folder Include="Assets.xcassets\Expense1.imageset\" />
-    <Folder Include="Assets.xcassets\Report1.imageset\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidResource Include="Resources\expense.png" />
     <AndroidResource Include="Resources\income.jpg" />
     <AndroidResource Include="Resources\logo.png">
-      <SubType></SubType>
-      <Generator></Generator>
+      <SubType>
+      </SubType>
+      <Generator>
+      </Generator>
     </AndroidResource>
     <AndroidResource Include="Resources\report.png" />
   </ItemGroup>

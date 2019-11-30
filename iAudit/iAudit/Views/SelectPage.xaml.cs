@@ -7,14 +7,16 @@ namespace iAudit.Views
 {
     public partial class SelectPage : ContentPage
     {
-        Year currentYear;
+        int currentYear;
         String month;
-        public SelectPage()
+
+        public SelectPage(int year)
         {
             InitializeComponent();
+            currentYear = year;
         }
 
-        public SelectPage(Year year, String m)
+        public SelectPage(int year, String m)
         {
             InitializeComponent();
             currentYear = year;

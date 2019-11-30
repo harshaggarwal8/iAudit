@@ -23,7 +23,7 @@
             <Label Text="Date" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"/>
             <Editor Text="{Binding Expense.Date}" d:Text="MM-DD-YYYY" FontFamily="Times" Placeholder="Enter the date as MM-DD-YYY" FontSize="16" Margin="0" TextColor="DarkRed"/>
         -->
-                <Entry x:Name="txtIncomeName" Placeholder="Income Name" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
+                <Entry x:Name="txtExpenseName" Placeholder="Income Name" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
                 <Entry x:Name="txtNotes" Placeholder="Notes"  FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
                 <Entry x:Name="txtAmount" Placeholder="Amount" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>
                 <Entry x:Name="txtYear" Placeholder = "Year" FontSize="20" FontFamily="Times" FontAttributes="Bold" TextColor="DarkBlue"></Entry>

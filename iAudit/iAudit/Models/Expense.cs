@@ -1,5 +1,7 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Text;
+using iAudit.Views;
 using Xamarin.Forms;
 
 namespace iAudit.Models
@@ -13,7 +15,7 @@ namespace iAudit.Models
       //  public Year Year { get; set; }
         public int Year { get; set; }
         public string Month { get; set; }
-        public string Day { get; set; }
+        public int Day { get; set; }
         public string Category { get; set; }
         //public string Date { get; set; }
         // public image Picture { get; set; }
