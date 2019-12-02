@@ -4,18 +4,19 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              Title="{Binding Title}"
              x:Class="iAudit.Views.ExpenseDetailsPage">
     <ContentPage.Content>
-        <StackLayout Spacing="20" Padding="15">
-            <Label Text="Income Name:" FontSize="Medium" />
-            <Label Text="{Binding Expense.ExpenseName}" d:Text="Expense name" FontSize="Small" TextColor="DarkRed"/>
-            <Label Text="Amount:" FontSize="Medium" />
-            <Label Text="{Binding Expense.Amount}" d:Text="Expense amount" FontSize="Small" TextColor="DarkRed"/>
-            <Label Text="Notes:" FontSize="Medium" />
-            <Label Text="{Binding Expense.Notes}" d:Text="Expense notes" FontSize="Small" TextColor="DarkRed"/>
-            <Label Text="Date:" FontSize="Medium" />
-            <Label Text="{Binding Expense.Date}" d:Text="Expense date" FontSize="Small" TextColor="DarkRed"/>
+        <StackLayout Spacing="20" Padding="15" Margin="30" >
+            <Label Text="Income Name:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Expense.ExpenseName}" d:Text="Expense name" FontSize="18" TextColor="DarkRed" FontFamily="Times" />
+            <Label Text="Amount:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Expense.Amount}" d:Text="Expense amount" FontSize="18" TextColor="DarkRed" FontFamily="Times"/>
+            <Label Text="Notes:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Expense.Notes}" d:Text="Expense notes" FontSize="18" TextColor="DarkRed" FontFamily="Times"/>
+            <Label Text="Date:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Expense.Date}" d:Text="Expense date" FontSize="18" TextColor="DarkRed" FontFamily="Times"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -22,13 +22,30 @@ namespace iAudit.Views
         public double Expense { get; set; }
         public double Profit_Loss { get; set; }
         public double Projection { get; set; }
+        public double Jan;
+        public double Feb;
+        public double Mar;
+        public double Apr;
+        public double May;
+        public double Jun;
+        public double Jul;
+        public double Aug;
+        public double Sep;
+        public double Oct;
+        public double Nov;
+        public double Dec;
+        public double pay;
+        public double donation;
+        public double incomeOther;
+
+        public double repair;
+        public double investment;
+        public double expenseOther;
         public string month { get; set; }
         public Year year { get; set; }
 
         ObservableCollection<Income> Incomes;
-        Command LoadIncomesCommand { get; set; }
         ObservableCollection<Expense> Expenses;
-        Command LoadExpensesCommand { get; set; }
 
         public ViewReportPage()
         {
@@ -45,10 +62,8 @@ namespace iAudit.Views
         protected override async void OnAppearing()
         {
             /* Will load items in order to be able to use them when creating the instantiations of the new graphs*/
-            Incomes = new ObservableCollection<Income>();
-            LoadIncomesCommand = new Command(async () => await ExecuteLoadIncomesCommand());
-            Expenses = new ObservableCollection<Expense>();
-            LoadExpensesCommand = new Command(async () => await ExecuteLoadExpensesCommand());
+            CreateIncomes();
+            CreateExpenses();
 
             base.OnAppearing();
             /*
@@ -124,20 +139,20 @@ namespace iAudit.Views
             var entries = new[]
             {
 
-                new Microcharts.Entry(1000)
+                new Microcharts.Entry((float)Income)
                 {
                     Label = "INCOME",
                     ValueLabel = amountIncome,
                     Color = SKColor.Parse("#104950")
                     //FillColor = SKColor.Parse("#266489")
                 },
-                new Microcharts.Entry(4020)
+                new Microcharts.Entry((float)Expense)
                 {
                     Label = "EXPENSE",
                     ValueLabel = amountExpense,
                     Color = SKColor.Parse("#F7A4B9")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Profit_Loss)
                 {
                     Label = "PROFIT/LOSS",
                     ValueLabel = amountLeft,
@@ -149,123 +164,229 @@ namespace iAudit.Views
             var chart = new BarChart() { Entries = entries };
             this.chartView.Chart = chart;
 
+            MonthlyEarnings();
             /* this line graph will now show the increase decrease
              * throughout the entire year, monthly */
             var entries1 = new[]
             {
-                new Microcharts.Entry(1000)
+                new Microcharts.Entry((float)Jan)
                 {
                     Label = "January",
-                    ValueLabel = "3000",
+                    ValueLabel = Jan.ToString(),
                     Color = SKColor.Parse("#104950")
                     //FillColor = SKColor.Parse("#266489")
                 },
-                new Microcharts.Entry(4020)
+                new Microcharts.Entry((float)Feb)
                 {
                     Label = "February",
-                    ValueLabel = "7000",
+                    ValueLabel = Feb.ToString(),
                     Color = SKColor.Parse("#F7A4B9")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Mar)
                 {
                     Label = "March",
-                    ValueLabel = "9000",
+                    ValueLabel = Mar.ToString(),
                     Color = SKColor.Parse("#0084b4")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Apr)
                 {
                     Label = "April",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Apr.ToString(),
+                    Color = SKColor.Parse("#c5002b")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)May)
                 {
                     Label = "May",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = May.ToString(),
+                    Color = SKColor.Parse("#26004c")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Jun)
                 {
                     Label = "June",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Jun.ToString(),
+                    Color = SKColor.Parse("#6f2de9")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Jul)
                 {
                     Label = "July",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Jul.ToString(),
+                    Color = SKColor.Parse("#c1c5e7")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Aug)
                 {
                     Label = "August",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Aug.ToString(),
+                    Color = SKColor.Parse("#f5805d")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Sep)
                 {
                     Label = "September",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Sep.ToString(),
+                    Color = SKColor.Parse("#876880")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Oct)
                 {
                     Label = "October",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Oct.ToString(),
+                    Color = SKColor.Parse("#eedd9d")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Nov)
                 {
                     Label = "November",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Nov.ToString(),
+                    Color = SKColor.Parse("#37030a")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float)Dec)
                 {
                     Label = "December",
-                    ValueLabel = "9000",
-                    Color = SKColor.Parse("#0084b4")
+                    ValueLabel = Dec.ToString(),
+                    Color = SKColor.Parse("#fd9e8a")
                 }
             };
 
             var line = new LineChart() { Entries = entries1 };
-
             this.lineView.Chart = line;
 
+            IncomeCategory();
             var entries2 = new[]
             {
-                new Microcharts.Entry(1000)
+                new Microcharts.Entry((float)pay)
                 {
-                    Label = "Repairs",
-                    ValueLabel = "400",
-                    Color = SKColor.Parse("#104250")
+                    Label = "Pay",
+                    ValueLabel = pay.ToString(),
+                    Color = SKColor.Parse("#12757d")
                     //FillColor = SKColor.Parse("#266489")
                 },
-                new Microcharts.Entry(4020)
+                new Microcharts.Entry((float)donation)
                 {
-                    Label = "Machinery",
-                    ValueLabel = "1500",
-                    Color = SKColor.Parse("#F7A9B9")
+                    Label = "Donation",
+                    ValueLabel = donation.ToString(),
+                    Color = SKColor.Parse("#e7f8ff")
                 },
-                new Microcharts.Entry(-100)
+                new Microcharts.Entry((float) incomeOther)
                 {
-                    Label = "Inventory",
-                    ValueLabel = "1000",
-                    Color = SKColor.Parse("#0184b4")
+                    Label = "Other",
+                    ValueLabel = incomeOther.ToString(),
+                    Color = SKColor.Parse("#a33141")
                 }
             };
 
-            var donut = new DonutChart() { Entries = entries2 };
-
+            var donut = new DonutChart() { Entries = entries2};
             this.donutView.Chart = donut;
 
-            var point = new PointChart() { Entries = entries2 };
+
+
+
+            MonthlySpendings();
+            /* this line graph will now show the increase decrease
+             * throughout the entire year, monthly */
+            var entries4 = new[]
+            {
+                new Microcharts.Entry((float)Jan)
+                {
+                    Label = "January",
+                    ValueLabel = Jan.ToString(),
+                    Color = SKColor.Parse("#104950")
+                    //FillColor = SKColor.Parse("#266489")
+                },
+                new Microcharts.Entry((float)Feb)
+                {
+                    Label = "February",
+                    ValueLabel = Feb.ToString(),
+                    Color = SKColor.Parse("#F7A4B9")
+                },
+                new Microcharts.Entry((float)Mar)
+                {
+                    Label = "March",
+                    ValueLabel = Mar.ToString(),
+                    Color = SKColor.Parse("#0084b4")
+                },
+                new Microcharts.Entry((float)Apr)
+                {
+                    Label = "April",
+                    ValueLabel = Apr.ToString(),
+                    Color = SKColor.Parse("#c5002b")
+                },
+                new Microcharts.Entry((float)May)
+                {
+                    Label = "May",
+                    ValueLabel = May.ToString(),
+                    Color = SKColor.Parse("#26004c")
+                },
+                new Microcharts.Entry((float)Jun)
+                {
+                    Label = "June",
+                    ValueLabel = Jun.ToString(),
+                    Color = SKColor.Parse("#6f2de9")
+                },
+                new Microcharts.Entry((float)Jul)
+                {
+                    Label = "July",
+                    ValueLabel = Jul.ToString(),
+                    Color = SKColor.Parse("#c1c5e7")
+                },
+                new Microcharts.Entry((float)Aug)
+                {
+                    Label = "August",
+                    ValueLabel = Aug.ToString(),
+                    Color = SKColor.Parse("#f5805d")
+                },
+                new Microcharts.Entry((float)Sep)
+                {
+                    Label = "September",
+                    ValueLabel = Sep.ToString(),
+                    Color = SKColor.Parse("#876880")
+                },
+                new Microcharts.Entry((float)Oct)
+                {
+                    Label = "October",
+                    ValueLabel = Oct.ToString(),
+                    Color = SKColor.Parse("#eedd9d")
+                },
+                new Microcharts.Entry((float)Nov)
+                {
+                    Label = "November",
+                    ValueLabel = Nov.ToString(),
+                    Color = SKColor.Parse("#37030a")
+                },
+                new Microcharts.Entry((float)Dec)
+                {
+                    Label = "December",
+                    ValueLabel = Dec.ToString(),
+                    Color = SKColor.Parse("#fd9e8a")
+                }
+            };
+
+            var point = new PointChart() { Entries = entries4 };
             this.pointView.Chart = point;
 
-            var gauge = new RadialGaugeChart() { Entries = entries2 };
+            ExpenseCategory();
+            var entries3 = new[]
+            {
+                new Microcharts.Entry((float)repair)
+                {
+                    Label = "Repairs",
+                    ValueLabel = repair.ToString(),
+                    Color = SKColor.Parse("#f5805d")
+                    //FillColor = SKColor.Parse("#266489")
+                },
+                new Microcharts.Entry((float)investment)
+                {
+                    Label = "Investment",
+                    ValueLabel = investment.ToString(),
+                    Color = SKColor.Parse("#d8fce5")
+                },
+                new Microcharts.Entry((float) expenseOther)
+                {
+                    Label = "Other",
+                    ValueLabel = expenseOther.ToString(),
+                    Color = SKColor.Parse("#520ff8")
+                }
+            };
+            var gauge = new RadialGaugeChart() { Entries = entries3 };
             this.gaugeView.Chart = gauge;
 
-            var radar = new RadarChart() { Entries = entries2 };
+            var radar = new RadarChart() { Entries = entries };
             this.radarView.Chart = radar;
 
             Income = 19000;
@@ -274,6 +395,284 @@ namespace iAudit.Views
             Projection = Profit_Loss / Income * 100;
 
         }
+
+        private void MonthlySpendings()
+        {
+            Jan = 0;
+            Feb = 0;
+            Mar = 0;
+            Apr = 0;
+            May = 0;
+            Jun = 0;
+            Jul = 0;
+            Aug = 0;
+            Sep = 0;
+            Oct = 0;
+            Nov = 0;
+            Dec = 0;
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("January"))
+                {
+                    Jan += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("February"))
+                {
+                    Feb += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("March"))
+                {
+                    Mar += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("April"))
+                {
+                    Apr += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("May"))
+                {
+                    May += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("June"))
+                {
+                    Jun += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("July"))
+                {
+                    Jul += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("August"))
+                {
+                    Aug += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("September"))
+                {
+                    Sep += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("October"))
+                {
+                    Oct += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("November"))
+                {
+                    Nov += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Month.Equals("December"))
+                {
+                    Dec += expense.Amount;
+                }
+            }
+        }
+
+        private void ExpenseCategory()
+        {
+            foreach (var expense in Expenses)
+            {
+                if (expense.Category.Equals("REPAIR"))
+                {
+                    repair += expense.Amount;
+                }
+            }
+            foreach (var expense in Expenses)
+            {
+                if (expense.Category.Equals("INVESTMENT"))
+                {
+                    investment += expense.Amount;
+                }
+            }
+
+            foreach (var expense in Expenses)
+            {
+                if (expense.Category.Equals("OTHER"))
+                {
+                    expenseOther += expense.Amount;
+                }
+            }
+        }
+
+        private void IncomeCategory()
+        {
+            foreach (var income in Incomes)
+            {
+                if (income.Category.Equals("Income"))
+                {
+                    pay += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Category.Equals("Donation"))
+                {
+                    donation += income.Amount;
+                }
+            }
+
+            foreach (var income in Incomes)
+            {
+                if (income.Category.Equals("Other"))
+                {
+                    incomeOther += income.Amount;
+                }
+            }
+        }
+
+        private void MonthlyEarnings()
+        {
+            foreach (var income in Incomes)
+            {
+                if(income.Month.Equals("January"))
+                {
+                    Jan += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("February"))
+                {
+                    Feb += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("March"))
+                {
+                    Mar += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("April"))
+                {
+                    Apr += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("May"))
+                {
+                    May += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("June"))
+                {
+                    Jun += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("July"))
+                {
+                    Jul += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("August"))
+                {
+                    Aug += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("September"))
+                {
+                    Sep += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("October"))
+                {
+                    Oct += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("November"))
+                {
+                    Nov += income.Amount;
+                }
+            }
+            foreach (var income in Incomes)
+            {
+                if (income.Month.Equals("December"))
+                {
+                    Dec += income.Amount;
+                }
+            }
+        }
+
+        private void CreateExpenses()
+        {
+            Expenses = new ObservableCollection<Expense>()
+            {
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "10-15-2019", Month = "October" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "06-03-2019", Month = "June" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "OTHER", Notes = "Repaired machinery at Repair INC.", Date = "09-15-2019", Month = "September" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "02-13-2019", Month = "February" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "08-15-2019", Month = "August" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "04-13-2019", Month = "April" }
+            };
+        }
+
+        private void CreateIncomes()
+        {
+            Incomes = new ObservableCollection<Income>()
+            {
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of January 15th", Date = "01-15-2019", Month = "January" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Date = "10-07-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Other", Notes = "Week of February 1st", Date = "02-01-2019", Month = "February" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Date = "09-15-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of April 7th", Date = "04-07-2019", Month = "April" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Other", Notes = "Week of September 1st", Date = "09-01-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Date = "08-15-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of March 7th", Date = "03-07-2019", Month = "March" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Date = "08-01-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of June 7th", Date = "06-07-2019", Month = "June" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 500.00, Category = "Donation", Notes = "Thanksgiving Donation", Date = "11-28-2019", Month = "November" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 135.00, Category = "Donation", Notes = "Kind Donation", Date = "08-01-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 775.00, Category = "Donation", Notes = "Need TAX Deduction Donation", Date = "07-15-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 300.00, Category = "Donation", Notes = "Family Gift", Date = "07-07-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 100.00, Category = "Donation", Notes = "Donated", Date = "12-01-2019", Month = "December" },
+            };
+        }
+
         async void EMAIL_Clicked(object sender, EventArgs e) //When user wants to get an email of the report
         {
 
@@ -323,67 +722,5 @@ namespace iAudit.Views
                 // Some other exception occurred
             }
         }
-
-        /* next two commands will load income and expense collection by calling on view model which has access to
-         * DataStore which can then retrieve all information necessary to fill in data to the collections held in this
-         * class and that will be needed in order to make calculations and fill graphs/ tables */
-        async Task ExecuteLoadIncomesCommand()
-        {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
-            try
-            {
-                IncomeViewModel incomeModel = new IncomeViewModel();
-                Incomes.Clear();
-                var incomes = (System.Collections.ObjectModel.ObservableCollection<iAudit.Models.Income>)await incomeModel.DataStore.GetIncomeAsync(true);
-
-
-                foreach (var income in incomes)
-                {
-                    Incomes.Add(income);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
-
-        async Task ExecuteLoadExpensesCommand()
-        {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
-            try
-            {
-                ExpenseViewModel expenseModel = new ExpenseViewModel();
-                Expenses.Clear();
-                var expenses = (System.Collections.ObjectModel.ObservableCollection<iAudit.Models.Expense>)await expenseModel.DataStore.GetExpenseAsync(true);
-
-
-                foreach (var expense in expenses)
-                {
-                    Expenses.Add(expense);
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
-
     }
 }
