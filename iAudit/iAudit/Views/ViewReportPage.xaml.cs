@@ -157,12 +157,13 @@ namespace iAudit.Views
                     //Cc = ccRecipients,
                     //Bcc = bccRecipients
                 };
-
+                /*
                 var fn = "Attachment.txt";
                 var file = Path.Combine(FileSystem.CacheDirectory, fn);
                 File.WriteAllText(file, "Hello World");
 
                 message.Attachments.Add(new EmailAttachment(file)); //adding attachment to the email here
+                */
                 await Email.ComposeAsync(message);
             }
             catch (FeatureNotSupportedException fbsEx)
