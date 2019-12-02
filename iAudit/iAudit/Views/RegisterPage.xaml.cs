@@ -32,11 +32,16 @@ namespace iAudit.Views
                 txtPassword.Text = string.Empty;
                 txtFirstName.Text = string.Empty;
                 txtLastName.Text = string.Empty;
+         /*       firebaseHelper.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+                    // Handle Errors here.
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                    // ...
+                });*/
                 await DisplayAlert("Success", "User Registered Successfuly", "OK");
                 var allExpense = await firebaseHelper.GetAllUser();
                 await Navigation.PushAsync(new LoginPage());
             }
-
             else if(!(txtPassword.Text == txtPasswordConfirm.Text) && txtEmail.Text==txtEmailConfirm.Text)
             {
                 await DisplayAlert("Error", "Passwords do not match.","OK");

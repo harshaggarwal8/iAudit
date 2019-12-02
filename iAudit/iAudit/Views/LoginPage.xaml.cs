@@ -39,7 +39,7 @@ namespace iAudit.Views
             var user = await firebaseHelper.GetUser(txtEmail.Text, txtPassword.Text);
             if (user != null)
             {
-                await Navigation.PushAsync(new AddExpensePage());
+                await Navigation.PushAsync(new YearsPage());
             }
             else
             {//Incorrect info

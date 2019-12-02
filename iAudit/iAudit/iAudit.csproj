@@ -13,7 +13,6 @@
     <PackageReference Include="Microcharts.Forms" Version="0.7.1" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Remove="Views\LoginPage.cs" />
     <Compile Remove="Views\NewItemPage.xaml.cs" />
     <Compile Remove="Views\ItemsPage.xaml.cs" />
   </ItemGroup>

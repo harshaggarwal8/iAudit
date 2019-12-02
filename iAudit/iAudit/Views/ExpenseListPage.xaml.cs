@@ -18,6 +18,7 @@ namespace iAudit.Views
     [DesignTimeVisible(false)]
     public partial class ExpenseListPage : ContentPage
     {
+        FirebaseClient firebase = new FirebaseClient("https://iaudit-e62d6.firebaseio.com");
         int currentYear;
         String currentMonth;
         ExpenseViewModel viewModel;
@@ -47,9 +48,19 @@ namespace iAudit.Views
            // ExpenseListView.SelectedItem = null;
         }
 
-        private void Expenses_Selected(object sender, SelectedItemChangedEventArgs e)
+        private async void Expenses_Selected(object sender, SelectedItemChangedEventArgs e)
         {
-
+            var expense = e.SelectedItem as Expense;
+            if (expense == null)
+                return;
+            FirebaseHelper firebaseHelper = new FirebaseHelper();
+            var expenses = await firebaseHelper.GetAllExpense();
+            await firebase
+              .Child("Expense/Year")
+              .OrderByKey()
+              .EqualTo(2019)
+              .OnceAsync<Expense>();
+            ExpensesYearList.ItemsSource = expenses;
         }
 
         async void AddExpense_Clicked(object sender, EventArgs e)
@@ -57,15 +68,11 @@ namespace iAudit.Views
             await Navigation.PushModalAsync(new NavigationPage(new AddExpensePage(currentYear, currentMonth)));
         }
 
-        protected async override void OnAppearing()
+        protected override void OnAppearing()
         {
             base.OnAppearing();
-            FirebaseHelper firebaseHelper = new FirebaseHelper();
-            var expenses = await firebaseHelper.GetAllExpense();
-            ExpensesYearList.ItemsSource = expenses;
-            if (viewModel.Expenses.Count == 0) //change after expenses.count
-                viewModel.LoadItemsCommand.Execute(null);
-
+          if (viewModel.Expenses.Count == 0) //change after expenses.count
+              viewModel.LoadItemsCommand.Execute(null);
         }
     }
 }

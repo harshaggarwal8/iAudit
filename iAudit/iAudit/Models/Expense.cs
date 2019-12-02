@@ -19,7 +19,15 @@ namespace iAudit.Models
         public string Category { get; set; }
         //public string Date { get; set; }
         // public image Picture { get; set; }
+       /* final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = database.getReference("server/saving-data/fireblog/posts");
 
+        // Attach a listener to read the data at our posts reference
+        ref.addValueEventListener(new ValueEventListener()
+        {
+            public override void onDataChange(DataSnapshot dataSnapshot)
+            {
+                Expense expense = dataSnapshot.getValue(Expense.class);*/
     }
 }
 

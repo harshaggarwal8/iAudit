@@ -10,6 +10,10 @@ namespace iAudit.Views
         int currentYear;
         String month;
 
+        public SelectPage()
+        {
+            InitializeComponent();
+        }
         public SelectPage(int year)
         {
             InitializeComponent();
@@ -30,6 +34,7 @@ namespace iAudit.Views
 
         async void Expense_Clicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new ExpenseListPage());
             await Navigation.PushAsync(new ExpenseListPage(currentYear, month));
         }
 

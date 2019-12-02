@@ -12,17 +12,13 @@ using iAudit.Views;
 using System.Linq;
 using System.Text;
 using Newtonsoft.Json;
-
-
 //This file serves as the connection to the Firebase
-
 namespace iAudit.Helper
 {
-
     public class FirebaseHelper
     {
         FirebaseClient firebase = new FirebaseClient("https://iaudit-e62d6.firebaseio.com");
-
+       // Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
         //INFO FOR USERS
             //Get list of all users
         public async Task<List<User>> GetAllUser()
