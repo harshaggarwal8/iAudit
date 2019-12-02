@@ -44,7 +44,12 @@ namespace iAudit.Views
             await Navigation.PushAsync(new AddExpensePage(currentYear, currentMonth));
 
             // Manually deselect item.
-            ExpenseListView.SelectedItem = null;
+           // ExpenseListView.SelectedItem = null;
+        }
+
+        private void Expenses_Selected(object sender, SelectedItemChangedEventArgs e)
+        {
+
         }
 
         async void AddExpense_Clicked(object sender, EventArgs e)
@@ -52,12 +57,15 @@ namespace iAudit.Views
             await Navigation.PushModalAsync(new NavigationPage(new AddExpensePage(currentYear, currentMonth)));
         }
 
-        protected override void OnAppearing()
+        protected async override void OnAppearing()
         {
             base.OnAppearing();
-
+            FirebaseHelper firebaseHelper = new FirebaseHelper();
+            var expenses = await firebaseHelper.GetAllExpense();
+            ExpensesYearList.ItemsSource = expenses;
             if (viewModel.Expenses.Count == 0) //change after expenses.count
                 viewModel.LoadItemsCommand.Execute(null);
+
         }
     }
 }

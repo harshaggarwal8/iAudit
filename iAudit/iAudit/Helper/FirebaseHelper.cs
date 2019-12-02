@@ -108,12 +108,12 @@ namespace iAudit.Helper
               .OnceAsync<Expense>()).Where(a => a.Object.ExpenseName == expenseName).FirstOrDefault();
             await firebase.Child("Expenses").Child(toDeleteExpense.Key).DeleteAsync();
         }
-        public async Task GetExpenseYear(int year)
+        public async Task<Expense> GetExpenseYear(int year)
         {
-            var allExpenses = await GetAllIncome();
+            var allExpenses = await GetAllExpense();
             await firebase
-              .Child("Income")
-              .OnceAsync<Income>();
+              .Child("Expense")
+              .OnceAsync<Expense>();
             return allExpenses.Where(a => a.Year == year).FirstOrDefault();
         }
 
