@@ -22,6 +22,38 @@ namespace iAudit.Helper
     public class FirebaseHelper
     {
         FirebaseClient firebase = new FirebaseClient("https://iaudit-e62d6.firebaseio.com");
+
+        //INFO FOR USERS
+            //Get list of all users
+        public async Task<List<User>> GetAllUser()
+        {
+            return (await firebase
+              .Child("User")
+              .OnceAsync<User>()).Select(user => new User
+              {
+                  FirstName = user.Object.FirstName,
+                  LastName = user.Object.LastName,
+                  Email = user.Object.Email,
+                  Password = user.Object.Password,
+              }).ToList();
+        }
+            //Add a new user from registration page
+        public async Task NewUser(string email, string password, string firstName, string lastName)
+        {
+            await firebase
+                .Child("User")
+                .PostAsync(new User() { FirstName = firstName, LastName = lastName, Email = email, Password = password });
+        }
+            //Get a user's info
+        public async Task<User> GetUser(string email, string password)
+        {
+            var allUsers = await GetAllUser();
+            await firebase
+              .Child("User")
+              .OnceAsync<User>();
+            return allUsers.Where(a => a.Email == email && a.Password == password).FirstOrDefault();
+        }
+        //EXPENSES
         public async Task<List<Expense>> GetAllExpense()
         {
             return (await firebase
@@ -76,6 +108,14 @@ namespace iAudit.Helper
               .OnceAsync<Expense>()).Where(a => a.Object.ExpenseName == expenseName).FirstOrDefault();
             await firebase.Child("Expenses").Child(toDeleteExpense.Key).DeleteAsync();
         }
+        public async Task GetExpenseYear(int year)
+        {
+            var allExpenses = await GetAllIncome();
+            await firebase
+              .Child("Income")
+              .OnceAsync<Income>();
+            return allExpenses.Where(a => a.Year == year).FirstOrDefault();
+        }
 
         //For Income
         public async Task<List<Income>> GetAllIncome()
@@ -110,6 +150,14 @@ namespace iAudit.Helper
               .Child("Income")
               .OnceAsync<Income>();
             return allIncomes.Where(a => a.IncomeName == incomeName).FirstOrDefault();
+        }
+        public async Task<Income> GetIncomeYear(int year)
+        {
+            var allIncomes = await GetAllIncome();
+            await firebase
+              .Child("Income")
+              .OnceAsync<Income>();
+            return allIncomes.Where(a => a.Year == year).FirstOrDefault();
         }
 
         public async Task UpdateIncome(string incomeName, string notes, double amount, int year, string month, string category, int day)
