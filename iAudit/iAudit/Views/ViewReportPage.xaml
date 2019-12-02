@@ -16,12 +16,12 @@
         <Label Text="{Binding Profit_Loss}" FontSize="Small" />
         <Label Text="Projection: + 84 %"/>
         <Label Text="{Binding Projection}" FontSize="Small" />
-        <microcharts:ChartView x:Name="chartView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="lineView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="donutView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="pointView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="gaugeView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="radarView" WidthRequest="200" HeightRequest="200"/>
+        <microcharts:ChartView x:Name="chartView" WidthRequest="300" HeightRequest="300"/>
+        <microcharts:ChartView x:Name="lineView" WidthRequest="300" HeightRequest="300"/>
+        <microcharts:ChartView x:Name="donutView" WidthRequest="300" HeightRequest="300"/>
+        <microcharts:ChartView x:Name="pointView" WidthRequest="300" HeightRequest="300"/>
+        <microcharts:ChartView x:Name="gaugeView" WidthRequest="300" HeightRequest="300"/>
+        <microcharts:ChartView x:Name="radarView" WidthRequest="300" HeightRequest="300"/>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
         <Button Text="Email Report!"
                 Clicked="EMAIL_Clicked"
