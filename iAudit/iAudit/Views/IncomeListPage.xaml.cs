@@ -43,7 +43,7 @@ namespace iAudit.Views
             if (income == null)
                 return;
 
-            await Navigation.PushAsync(new AddIncomePage(currentYear,currentMonth));
+            await Navigation.PushAsync(new IncomeDetailsPage(income));
 
             // Manually deselect item.
             IncomeListView.SelectedItem = null;

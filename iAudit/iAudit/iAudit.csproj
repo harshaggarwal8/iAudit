@@ -15,9 +15,11 @@
     <Compile Remove="Views\LoginPage.cs" />
     <Compile Remove="Views\NewItemPage.xaml.cs" />
     <Compile Remove="Views\ItemsPage.xaml.cs" />
+    <Compile Remove="Views\MyPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Views\NewItemPage.xaml" />
     <EmbeddedResource Remove="Views\ItemsPage.xaml" />
+    <EmbeddedResource Remove="Views\MyPage.xaml" />
   </ItemGroup>
 </Project>

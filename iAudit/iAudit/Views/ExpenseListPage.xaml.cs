@@ -41,7 +41,7 @@ namespace iAudit.Views
             if (expense == null)
                 return;
 
-            await Navigation.PushAsync(new AddExpensePage(currentYear, currentMonth));
+            await Navigation.PushAsync(new ExpenseDetailsPage(expense));
 
             // Manually deselect item.
             ExpenseListView.SelectedItem = null;
