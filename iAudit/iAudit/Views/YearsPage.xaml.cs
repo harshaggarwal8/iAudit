@@ -22,15 +22,15 @@ namespace iAudit.Views
             InitializeComponent();
             BindingContext = viewModel = new YearViewModel();
         }
-
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        //async void OnItemSelected
+        void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
             var year = args.SelectedItem as Year;
             if (year == null)
                 return;
 
-            await Navigation.PushAsync(new MonthsPage(year));
-
+            //await Navigation.PushAsync(new MonthsPage(year);
+           
             // Manually deselect item.
             YearsListView.SelectedItem = null;
         }

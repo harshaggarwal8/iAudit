@@ -24,7 +24,7 @@ namespace iAudit.Services
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
                 new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." }
             };
-
+            */
             years = new List<Year>()
             {
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2019", Description="Current Tax Year" },
@@ -33,7 +33,7 @@ namespace iAudit.Services
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2022", Description="No notes" },
                 new Year { Id = Guid.NewGuid().ToString(), Text = "2023", Description="No notes" }
             };
-            */
+            
             incomes = new List<Income>()
             {
                 new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Day = 05, Month = "October" },
@@ -47,7 +47,7 @@ namespace iAudit.Services
                 new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Day = 01, Month = "August" },
                 new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Day = 15, Month = "July" },
                 new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Day = 07, Month = "July" },
-                new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Day = 01, Month = "July" },
+                new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Day = 01, Month = "July" }
             };
 
             expenses = new List<Expense>()

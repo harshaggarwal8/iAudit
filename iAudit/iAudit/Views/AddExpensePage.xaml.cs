@@ -65,6 +65,7 @@ namespace iAudit.Views
             txtCategory.Text = string.Empty;
             await DisplayAlert("Success", "Expense Added Successfully", "OK");
             var allExpense = await firebaseHelper.GetAllExpense();
+            await Navigation.PushAsync(new YearsPage());
         //    lstExpense.ExpenseSource = allExpense;   
          //   MessagingCenter.Send(this, "AddExpense", expense);
            // await Navigation.PopModalAsync();

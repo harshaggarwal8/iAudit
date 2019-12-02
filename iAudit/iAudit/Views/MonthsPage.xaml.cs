@@ -8,6 +8,7 @@ namespace iAudit.Views
     public partial class MonthsPage : ContentPage
     {
         int currentYear;
+        Year CurrentYear;
         public MonthsPage()
         {
             InitializeComponent();
@@ -17,6 +18,10 @@ namespace iAudit.Views
             InitializeComponent();
             currentYear = year;
         } 
+        public MonthsPage(Year year)
+        {
+            InitializeComponent();
+        }
 
         async void Jan_Clicked(object sender, EventArgs e)
         {

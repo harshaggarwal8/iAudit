@@ -55,7 +55,8 @@ namespace iAudit.Views
             var allItems = await firebaseHelper.GetAllIncome();
           //  lstIncome.IncomeSource = allIncome;            
            // MessagingCenter.Send(this, "AddIncome", income);
-            await Navigation.PopModalAsync();
+            await Navigation.PushAsync(new AddIncomePage());
+          //  await Navigation.PopModalAsync();
         }
 
         async void Cancel_Clicked(object sender, EventArgs e)

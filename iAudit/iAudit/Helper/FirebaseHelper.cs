@@ -17,9 +17,16 @@ namespace iAudit.Helper
 {
     public class FirebaseHelper
     {
+        //Connection to Firebase Client
         FirebaseClient firebase = new FirebaseClient("https://iaudit-e62d6.firebaseio.com");
-       // Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
         //INFO FOR USERS
+            //Add a new user from registration page
+        public async Task NewUser(string email, string password, string firstName, string lastName)
+        {
+            await firebase
+                .Child("User")
+                .PostAsync(new User() { FirstName = firstName, LastName = lastName, Email = email, Password = password });
+        }
             //Get list of all users
         public async Task<List<User>> GetAllUser()
         {
@@ -33,14 +40,7 @@ namespace iAudit.Helper
                   Password = user.Object.Password,
               }).ToList();
         }
-            //Add a new user from registration page
-        public async Task NewUser(string email, string password, string firstName, string lastName)
-        {
-            await firebase
-                .Child("User")
-                .PostAsync(new User() { FirstName = firstName, LastName = lastName, Email = email, Password = password });
-        }
-            //Get a user's info
+            //Get user's info
         public async Task<User> GetUser(string email, string password)
         {
             var allUsers = await GetAllUser();
@@ -50,6 +50,7 @@ namespace iAudit.Helper
             return allUsers.Where(a => a.Email == email && a.Password == password).FirstOrDefault();
         }
         //EXPENSES
+            //LIST OF ALL EXPENSES
         public async Task<List<Expense>> GetAllExpense()
         {
             return (await firebase
@@ -67,7 +68,7 @@ namespace iAudit.Helper
                   //Date = expense.Object.Date
               }).ToList();
         }
-
+        //ADD A NEW EXPENSE TO THE DATABASE
         public async Task AddExpense(string expenseName, string notes, double amount, int year, string month, int day, string category)
         {
 
@@ -75,7 +76,7 @@ namespace iAudit.Helper
               .Child("Expense")
               .PostAsync(new Expense() { ExpenseName = expenseName, Notes = notes, Amount = amount, Year = year, Month = month, Day = day, Category = category });
         }
-
+        //GET AN EXPENSE
         public async Task<Expense> GetExpense(string expenseName)
         {
             var allExpenses = await GetAllExpense();
@@ -84,7 +85,7 @@ namespace iAudit.Helper
               .OnceAsync<Expense>();
             return allExpenses.Where(a => a.ExpenseName == expenseName).FirstOrDefault();
         }
-
+        //UPDATE AN EXPENSE
         public async Task UpdateExpense(string expenseName, string notes, double amount, int year, string month, int day, string category)
         {
             var toUpdateExpense = (await firebase

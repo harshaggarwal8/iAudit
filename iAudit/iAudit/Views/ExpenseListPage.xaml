@@ -14,7 +14,7 @@
         <StackLayout>
             <ListView
                 x:Name="ExpensesYearList"
-                ItemsSource="ExpensesYearList"
+                ItemSelected="Expenses_Selected"
                 RowHeight="80">
                 <ListView.ItemTemplate>
                     <DataTemplate>
