@@ -12,13 +12,13 @@
                      Margin="50"
                      VerticalOptions="Center"
                      HorizontalOptions="Center">
-            <Entry Text="First Name" FontFamily="Times" WidthRequest="200"/>
-            <Entry Text="Last Name" FontFamily="Times"/>
-            <Entry Text="Email" FontFamily="Times"/>
-            <Entry Text="Confirm Email" FontFamily="Times"/>
-            <Entry Text="Password" IsPassword="True" FontFamily="Times"/>
-            <Entry Text="Confirm Password" IsPassword="True" FontFamily="Times"/>
-            <Button Text="SUBMIT" Clicked="SUBMIT_Clicked" FontFamily="Times" TextColor="CornflowerBlue" FontAttributes="Bold"/>
+            <Entry x:Name="txtFirstName" Placeholder="First Name" FontSize="30" FontFamily="Times" WidthRequest="300"/>
+            <Entry x:Name="txtLastName" Placeholder="Last Name" FontSize="30" FontFamily="Times"/>
+            <Entry x:Name="txtEmail" Placeholder="Email" FontSize="30" FontFamily="Times"/>
+            <Entry x:Name="txtEmailConfirm" Placeholder="Confirm Email" FontSize="30" FontFamily="Times"/>
+            <Entry x:Name="txtPassword" Placeholder="Password" IsPassword="True" FontSize="30" FontFamily="Times"/>
+            <Entry x:Name="txtPasswordConfirm" Placeholder="Confirm Password" IsPassword="True" FontSize="30" FontFamily="Times"/>
+            <Button Text="SUBMIT" Clicked="SUBMIT_Clicked" FontSize="30" FontFamily="Times" TextColor="CornflowerBlue" FontAttributes="Bold"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

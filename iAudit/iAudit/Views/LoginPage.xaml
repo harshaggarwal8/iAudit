@@ -10,13 +10,13 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"  VerticalOptions="Center" HorizontalOptions="Center"> 
              <StackLayout Spacing="20" Padding="15" Orientation="Vertical"> 
-                <Image Source="@drawable/logo.png" WidthRequest="100" HeightRequest="100"/> <!--For Android-->
+                <Image Source="@drawable/logo.png" WidthRequest="150" HeightRequest="100"/> <!--For Android-->
                 <Image Source="Splash" WidthRequest="100" HeightRequest="100" /> <!--For iOS-->
-                <Entry Placeholder="enter email" FontFamily="Times" TextColor="DarkBlue"/>
-                <Entry Placeholder="enter password" IsPassword="True" FontFamily="Times" TextColor="DarkBlue"/>
+                <Entry x:Name="txtEmail" Placeholder="Enter email" FontSize="35" FontFamily="Times" TextColor="DarkBlue"/>
+                <Entry x:Name="txtPassword"  Placeholder="Enter password"  FontSize="35" IsPassword="True" FontFamily="Times" TextColor="DarkBlue"/>
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                    <Button Text="LOGIN" Clicked="LOGIN_Clicked" BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="100" TextColor="DarkBlue"/>
-                    <Button Text="REGISTER" Clicked="REGISTER_Clicked" BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="100" TextColor="DarkBlue"/>
+                    <Button Text="LOGIN" Clicked="LOGIN_Clicked" BackgroundColor="LightSkyBlue" FontSize="25" FontFamily="Times" WidthRequest="150" TextColor="DarkBlue"/>
+                    <Button Text="REGISTER" Clicked="REGISTER_Clicked" BackgroundColor="LightSkyBlue" FontSize="25" FontFamily="Times" WidthRequest="150" TextColor="DarkBlue"/>
                 </StackLayout>
         </StackLayout>
         </StackLayout>
