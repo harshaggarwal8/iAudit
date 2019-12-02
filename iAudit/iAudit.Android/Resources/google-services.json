@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "409315697781",
+    "firebase_url": "https://iaudit-e62d6.firebaseio.com",
+    "project_id": "iaudit-e62d6",
+    "storage_bucket": "iaudit-e62d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409315697781:android:b6d753f755a60891dec43c",
+        "android_client_info": {
+          "package_name": "com.company.iAudit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409315697781-08d6f1k5j16jjj7lgalbl9n4991vmmg6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPhxFIggcl3PKlPnYhEXycn2SnxTjTG68"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409315697781-08d6f1k5j16jjj7lgalbl9n4991vmmg6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
