@@ -11,13 +11,13 @@ namespace iAudit.Views
     [DesignTimeVisible(false)]
     public partial class AddExpensePage : ContentPage
     {
-        public Expense expense{ get; set; }
+        public Expense Expense{ get; set; }
         
         public AddExpensePage()
         {
             InitializeComponent();
 
-            expense = new Expense
+            Expense = new Expense
             {
                 ExpenseName = "Expense",
                 Notes = "No Notes.",
@@ -33,7 +33,7 @@ namespace iAudit.Views
         {
             InitializeComponent();
 
-            expense = new Expense
+            Expense = new Expense
             {
                 ExpenseName = "Expense",
                 Notes = "No Notes.",
@@ -49,7 +49,7 @@ namespace iAudit.Views
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "AddExpense", expense); //AddINCOme??
+            MessagingCenter.Send(this, "AddExpense", Expense);
             await Navigation.PopModalAsync();
         }
 

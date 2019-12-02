@@ -12,12 +12,12 @@ namespace iAudit.Views
     public partial class AddIncomePage : ContentPage
     {
         
-        public Income income { get; set; }
+        public Income Income { get; set; }
         
         public AddIncomePage()
         {
             InitializeComponent();
-            income = new Income
+            Income = new Income
             {
                 IncomeName = "Expense",
                 Notes = "No Notes.",
@@ -33,7 +33,7 @@ namespace iAudit.Views
 		{
             InitializeComponent();
 
-            income = new Income
+            Income = new Income
             {
                 IncomeName = "Income",
                 Notes = "No Notes.",
@@ -49,7 +49,7 @@ namespace iAudit.Views
 
         async void Save_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "AddIncome", income);
+            MessagingCenter.Send(this, "AddIncome", Income);
             await Navigation.PopModalAsync();
         }
 
