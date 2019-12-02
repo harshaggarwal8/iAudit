@@ -120,6 +120,15 @@ namespace iAudit.Views
 
             this.donutView.Chart = donut;
 
+            var point = new PointChart() { Entries = entries2 };
+            this.pointView.Chart = point;
+
+            var gauge = new RadialGaugeChart() { Entries = entries2 };
+            this.gaugeView.Chart = gauge;
+
+            var radar = new RadarChart() { Entries = entries2 };
+            this.radarView.Chart = radar;
+
             Income = 19000;
             Expense = 1200;
             Profit_Loss = Income - Expense;
