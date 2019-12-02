@@ -14,6 +14,8 @@ namespace iAudit.ViewModels
     {
         public ObservableCollection<Income> Incomes { get; set; }
         public Command LoadItemsCommand { get; set; }
+        // actual viewmodel for income which is where the income model is created and where they are all loaded
+        //Code to create and show incomes
         public IncomeViewModel()
         {
             Title = "Income Log";
@@ -27,6 +29,7 @@ namespace iAudit.ViewModels
                 await DataStore.AddIncomeAsync(newIncome);
             });
         }
+        // loading the actual incomes from the DataStore
         async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
