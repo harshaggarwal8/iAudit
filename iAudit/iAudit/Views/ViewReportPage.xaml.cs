@@ -37,7 +37,6 @@ namespace iAudit.Views
         public double pay;
         public double donation;
         public double incomeOther;
-
         public double repair;
         public double investment;
         public double expenseOther;
@@ -72,90 +71,41 @@ namespace iAudit.Views
              * and if they dont exist assumer viewing a report for all year so add
              */
 
-            if (Incomes != null)
+            foreach (var income in Incomes)
             {
-                foreach (var income in Incomes)
-                {
-                    if (year != null)
-                    {
-                        if (income.Year == year)
-                        {
-                            if (month != null)
-                            {
-                                if (income.Month.Equals(month))
-                                {
-                                    Income += income.Amount;
-                                }
-                            }
-                            else
-                            {
-                                Income += income.Amount;
-                            }
-
-                        }
-                    }
-                    else
-                    {
-                        Income += income.Amount;
-                    }
-                }
+                Income += income.Amount; 
             }
 
             foreach (var expense in Expenses)
             {
-                if (year != null)
-                {
-                    if (expense.Year == year)
-                    {
-                        if (month != null)
-                        {
-                            if (expense.Month.Equals(month))
-                            {
-                                Expense += expense.Amount;
-                            }
-                        }
-                        else
-                        {
-                            Expense += expense.Amount;
-                        }
-
-                    }
-                }
-                else
-                {
-                    Expense += expense.Amount;
-                }
+                Expense += expense.Amount;
             }
 
             /* calculate the amounts for the following graphs
              * will be overwritten for the rest
              * */
-            string amountIncome = Income.ToString();
-            string amountExpense = Expense.ToString();
+            
             Profit_Loss = Income - Expense;
-            string amountLeft = Profit_Loss.ToString();
-
             // bar graph will only show the difference between income and expense and resulting profit or loss
             var entries = new[]
             {
-
                 new Microcharts.Entry((float)Income)
                 {
                     Label = "INCOME",
-                    ValueLabel = amountIncome,
+                    ValueLabel = Income.ToString(),
                     Color = SKColor.Parse("#104950")
                     //FillColor = SKColor.Parse("#266489")
                 },
                 new Microcharts.Entry((float)Expense)
                 {
                     Label = "EXPENSE",
-                    ValueLabel = amountExpense,
+                    ValueLabel = Expense.ToString(),
                     Color = SKColor.Parse("#F7A4B9")
                 },
                 new Microcharts.Entry((float)Profit_Loss)
                 {
                     Label = "PROFIT/LOSS",
-                    ValueLabel = amountLeft,
+                    ValueLabel = Profit_Loss.ToString(),
                     Color = SKColor.Parse("#0084b4")
                 }
             };
