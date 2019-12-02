@@ -6,6 +6,7 @@ namespace iAudit.Models
 {
     public class Income 
     {
+        //income view model, used when instantiating new models
         public string Id { get; set; }
         public string IncomeName { get; set; }
         public string Notes { get; set; }

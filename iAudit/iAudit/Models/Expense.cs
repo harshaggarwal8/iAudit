@@ -6,6 +6,7 @@ namespace iAudit.Models
 {
     public class Expense 
     {
+        //expense view model, used when instantiating new models
         public string Id { get; set; }
         public string ExpenseName { get; set; }
         public string Notes { get; set; }
