@@ -67,7 +67,7 @@ namespace iAudit.Views
             List<string> recipient = new List<string>();
             recipient.Add("harsh.aggarwal@mavs.uta.edu"); //Right now, hardcoding my email for recieving the data
             recipient.Add("officialharshagg8@gmail.com");
-            await SendEmail("iAudit Report", "Here's your report-", recipient);
+            await SendEmail("iAudit Expense Log", "Here's your expense log-", recipient);
 
         }
 
