@@ -50,7 +50,7 @@ namespace iAudit.Views
             }
 
             base.OnBackButtonPressed();
-        //      return true;
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }

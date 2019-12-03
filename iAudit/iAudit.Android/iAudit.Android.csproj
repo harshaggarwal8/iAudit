@@ -81,6 +81,8 @@
     </PackageReference>
     <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
       <Version>71.1601.0</Version>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

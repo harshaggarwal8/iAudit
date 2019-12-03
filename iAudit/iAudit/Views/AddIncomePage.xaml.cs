@@ -20,7 +20,7 @@ namespace iAudit.Views
         private int currentYear;
         private string currentMonth;
 
-        public Income income { get; set; }
+        public Income Income { get; set; }
         
         public AddIncomePage()
         {
@@ -35,6 +35,16 @@ namespace iAudit.Views
 
         protected async override void OnAppearing()
         {
+            Income = new Income
+            {
+                IncomeName = "Income",
+                Notes = "No Notes.",
+                Date = "MM-DD-YYYY",
+                Year = year,
+                Month = month,
+                Amount = 000.00,
+                Category = "Income"
+            };
 
             base.OnAppearing();
             var allIncome = await firebaseHelper.GetAllIncome();
@@ -54,9 +64,9 @@ namespace iAudit.Views
             await DisplayAlert("Success", "Income Added Successfully", "OK");
             var allItems = await firebaseHelper.GetAllIncome();
           //  lstIncome.IncomeSource = allIncome;            
-           // MessagingCenter.Send(this, "AddIncome", income);
-            await Navigation.PushAsync(new AddIncomePage());
-          //  await Navigation.PopModalAsync();
+            MessagingCenter.Send(this, "AddIncome", income);
+            await Navigation.PopModalAsync();
+          //  await Navigation.PushAsync(new AddIncomePage());
         }
 
         async void Cancel_Clicked(object sender, EventArgs e)

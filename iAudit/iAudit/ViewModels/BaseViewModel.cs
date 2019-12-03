@@ -10,10 +10,12 @@ using iAudit.Services;
 
 namespace iAudit.ViewModels
 {
+    /* all view models inherit from this base view model as it holds all the main triggers,
+     * neccesary functions that will later be overwritten, used by the inherited classes*/
     public class BaseViewModel : INotifyPropertyChanged
     {
         public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>();
-
+        
         bool isBusy = false;
         public bool IsBusy
         {

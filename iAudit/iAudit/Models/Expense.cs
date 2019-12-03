@@ -8,7 +8,8 @@ namespace iAudit.Models
 {
     public class Expense 
     {
-       // public string Id { get; set; }
+        //expense view model, used when instantiating new models
+        public string Id { get; set; }
         public string ExpenseName { get; set; }
         public string Notes { get; set; }
         public double Amount { get; set; }

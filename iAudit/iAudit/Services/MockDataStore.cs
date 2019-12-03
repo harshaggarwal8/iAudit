@@ -36,6 +36,7 @@ namespace iAudit.Services
             
             incomes = new List<Income>()
             {
+/*
                 new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of October 15th", Day = 05, Month = "October" },
                 new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Day = 07, Month = "October" },
                 new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of October 1st", Day = 01, Month = "October" },
@@ -48,16 +49,42 @@ namespace iAudit.Services
                 new Income { IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Day = 15, Month = "July" },
                 new Income { IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of July 7th", Day = 07, Month = "July" },
                 new Income { IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Day = 01, Month = "July" }
+*/
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of January 15th", Date = "01-15-2019", Month = "January" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of October 7th", Date = "10-07-2019", Month = "October" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Other", Notes = "Week of February 1st", Date = "02-01-2019", Month = "February" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of September 15th", Date = "09-15-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of April 7th", Date = "04-07-2019", Month = "April" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Other", Notes = "Week of September 1st", Date = "09-01-2019", Month = "September" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of August 15th", Date = "08-15-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of March 7th", Date = "03-07-2019", Month = "March" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of August 1st", Date = "08-01-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 1000.25, Category = "Income", Notes = "Week of July 15th", Date = "07-15-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 995.25, Category = "Income", Notes = "Week of June 7th", Date = "06-07-2019", Month = "June" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 2000.23, Category = "Income", Notes = "Week of July 1st", Date = "07-01-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 500.00, Category = "Donation", Notes = "Thanksgiving Donation", Date = "11-28-2019", Month = "November" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 135.00, Category = "Donation", Notes = "Kind Donation", Date = "08-01-2019", Month = "August" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 775.00, Category = "Donation", Notes = "Need TAX Deduction Donation", Date = "07-15-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 300.00, Category = "Donation", Notes = "Family Gift", Date = "07-07-2019", Month = "July" },
+                new Income { Id = Guid.NewGuid().ToString(), IncomeName = "WEEK PAY", Amount = 100.00, Category = "Donation", Notes = "Donated", Date = "12-01-2019", Month = "December" }
             };
 
             expenses = new List<Expense>()
             {
+/*
                 new Expense {ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Day = 15, Month = "October" },
                 new Expense {ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Day = 03, Month = "October" },
                 new Expense {ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Day = 15, Month = "September" },
                 new Expense {ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Day = 13, Month = "September" },
                 new Expense { ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Day = 08, Month = "August" },
                 new Expense { ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Day = 29, Month = "August" }
+*/
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "10-15-2019", Month = "October" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "06-03-2019", Month = "June" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "OTHER", Notes = "Repaired machinery at Repair INC.", Date = "09-15-2019", Month = "September" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "02-13-2019", Month = "February" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "REPAIR SERVICE", Amount = 200.25, Category = "REPAIR", Notes = "Repaired machinery at Repair INC.", Date = "08-15-2019", Month = "August" },
+                new Expense { Id = Guid.NewGuid().ToString(), ExpenseName = "NEW INVENTORY", Amount = 1200.25, Category = "INVESTMENT", Notes = "Bought new machinery from Machinery INC.", Date = "04-13-2019", Month = "April" }
             };
         }
 

@@ -14,6 +14,7 @@ namespace iAudit.ViewModels
     {
         public ObservableCollection<Year> Years { get; set; }
         public Command LoadItemsCommand { get; set; }
+        //code needed to add and retriece years from DataStore
         public YearViewModel()
         {
             Title = "Browse";

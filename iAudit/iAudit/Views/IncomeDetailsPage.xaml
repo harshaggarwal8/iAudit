@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
+             Title="{Binding Title}"
+             x:Class="iAudit.Views.IncomeDetailsPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15" Margin="30">
+            <Label Text="Income Name:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Income.IncomeName}" d:Text="Income name" FontSize="18" TextColor="Green" FontFamily="Times"/>
+            <Label Text="Amount:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Income.Amount}" d:Text="Income amount" FontSize="18" TextColor="Green" FontFamily="Times"/>
+            <Label Text="Notes:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Income.Notes}" d:Text="Income notes" FontSize="18" TextColor="Green" FontFamily="Times"/>
+            <Label Text="Date:" FontSize="Medium" FontFamily="Times"/>
+            <Label Text="{Binding Income.Date}" d:Text="Income date" FontSize="18" TextColor="Green" FontFamily="Times"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -12,8 +12,10 @@ namespace iAudit.ViewModels
 {
     public class ExpenseViewModel : BaseViewModel
     {
+        // actual viewmodel for expense which is where the expense model is created and where they are all loaded
         public ObservableCollection<Expense> Expenses { get; set; }
         public Command LoadItemsCommand { get; set; }
+        //Code to create and show expenses
         public ExpenseViewModel()
         {
             Title = "Expense Log";
@@ -27,6 +29,7 @@ namespace iAudit.ViewModels
                 await DataStore.AddExpenseAsync(newExpense);
             });
         }
+        // loading the actual expenses from the DataStore
         async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
@@ -54,4 +57,3 @@ namespace iAudit.ViewModels
         }
     }
 }
-

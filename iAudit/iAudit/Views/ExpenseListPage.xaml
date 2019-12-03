@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             BackgroundColor="AliceBlue"
              x:Class="iAudit.Views.ExpenseListPage"
              Title="Expense Log"
              x:Name="ExpenseLog">
@@ -32,7 +33,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-           <!-- <ListView x:Name="ExpenseListView"
+           <ListView x:Name="ExpenseListView"
                   ItemsSource="{Binding Expenses}"
                   VerticalOptions="FillAndExpand"
                   HasUnevenRows="true"
@@ -88,7 +89,15 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-                </ListView> -->
+                </ListView>
         </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="5">
+            <Button Text="EMAIL EXPENSE LOG"
+                   Clicked="EMAIL_Clicked"
+                   BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="200" HeightRequest="50" TextColor="DarkBlue"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="Center" />
+         </StackLayout>
+    </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="iAudit.Views.IncomeListPage"
              Title="{Binding Title}"
+             BackgroundColor="AliceBlue"
              x:Name="IncomeLog">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Clicked="AddIncome_Clicked" />
@@ -69,6 +70,16 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="5">
+        <Button Text="EMAIL INCOME LOG"
+                Clicked="EMAIL_Clicked"
+                BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="200" HeightRequest="50" TextColor="DarkBlue"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" />
+        </StackLayout>
+
     </StackLayout>
     </ContentPage.Content>
 </ContentPage>

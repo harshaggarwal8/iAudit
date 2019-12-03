@@ -19,17 +19,16 @@ namespace iAudit.Views
     {
         FirebaseHelper firebaseHelper = new FirebaseHelper();
 
-        public Expense expense{ get; set; }
-
         private int currentYear;
 
         private string currentMonth;
 
+        public Expense Expense{ get; set; }
+
         public AddExpensePage()
         {
             InitializeComponent();
-
-      /*     expense = new Expense
+            Expense = new Expense
             {
                 ExpenseName = "Expense",
                 Notes = "No Notes.",
@@ -39,7 +38,7 @@ namespace iAudit.Views
             };
 
             BindingContext = this;
-        */}
+        }
         public AddExpensePage(int currentYear, string currentMonth)
         {
             this.currentYear = currentYear;
@@ -47,10 +46,21 @@ namespace iAudit.Views
         }
         protected async override void OnAppearing()
         {
-
             base.OnAppearing();
             var allExpense = await firebaseHelper.GetAllExpense();
            // lstExpense.ExpenseSource = allExpense;
+            Expense = new Expense
+            {
+                ExpenseName = "Expense",
+                Notes = "No Notes.",
+                Date = "MM-DD-YYYY",
+                Year = year,
+                Month = month,
+                Amount = 000.00,
+                Category = "Expense"
+            };
+
+            BindingContext = this;
         }
 
         async void Add_Clicked(object sender, EventArgs e)
@@ -65,10 +75,10 @@ namespace iAudit.Views
             txtCategory.Text = string.Empty;
             await DisplayAlert("Success", "Expense Added Successfully", "OK");
             var allExpense = await firebaseHelper.GetAllExpense();
+            
             await Navigation.PushAsync(new YearsPage());
-        //    lstExpense.ExpenseSource = allExpense;   
-         //   MessagingCenter.Send(this, "AddExpense", expense);
-           // await Navigation.PopModalAsync();
+            MessagingCenter.Send(this, "AddExpense", Expense);
+            await Navigation.PopModalAsync();
         }
 
         async void Cancel_Clicked(object sender, EventArgs e)

@@ -6,17 +6,38 @@
     xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms" 
     xmlns:local="clr-namespace:Microcharts.Samples.Forms"
     x:Class="iAudit.Views.ViewReportPage">
-    <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="30">
-        <Label Text="Total Income: $19,000" FontSize="22" FontFamily="Times" TextColor="Green"/>
-        <Label Text="{Binding Income}" FontSize="22" FontFamily="Times"/>
-        <Label Text="Total Expense: $2,900" FontSize="22" FontFamily="Times" TextColor="DarkRed"/>
-        <Label Text="{Binding Expense}" FontSize="22" FontFamily="Times"/>
-        <Label Text="Profit/Loss: $16,100" FontSize="22" FontFamily="Times" TextColor="DarkBlue"/>
-        <Label Text="{Binding Profit_Loss}" FontSize="22" FontFamily="Times"/>
-        <Label Text="Projection: + 84 %" FontSize="22" FontFamily="Times" TextColor="DarkGray"/>
-        <Label Text="{Binding Projection}" FontSize="22" FontFamily="Times" />
-        <microcharts:ChartView x:Name="chartView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="lineView" WidthRequest="200" HeightRequest="200"/>
-        <microcharts:ChartView x:Name="donutView" WidthRequest="200" HeightRequest="200"/>        
+    <ScrollView>
+    <StackLayout Orientation="Vertical" >
+        <Label Text="Total Income: $17,792.92" Margin="4,0,0,0" FontFamily="Times" TextColor="Green"/>
+        <Label Text="{Binding Income}" FontSize="Small" Margin="4,0,0,0" FontFamily="Times" TextColor="Green"/>
+        <Label Text="Total Expense: $4201.50" Margin="4,0,0,0" FontFamily="Times" TextColor="DarkRed"/>
+        <Label Text="{Binding Expense}" FontSize="Small" Margin="4,0,0,0" FontFamily="Times" TextColor="DarkRed"/>
+        <Label Text="Profit/Loss: $13591.42" Margin="4,0,0,0" FontFamily="Times" TextColor="BlueViolet"/>
+        <Label Text="{Binding Profit_Loss}" FontSize="Small" Margin="4,0,0,0" FontFamily="Times" TextColor="BlueViolet"/>
+        <Label Text="Projection " Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic"/>
+        <Label Text="Yearly + 76.39%" Margin="16,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="14"/>
+        <Label Text="Expected Income Total: $31,384.96" Margin="16,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="14"/>
+        <Label Text="Expected Expense Total: $7,411.03" Margin="16,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="14"/>
+        <Label Text="{Binding Projection}" FontSize="Small" Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" />
+        <microcharts:ChartView x:Name="chartView" WidthRequest="300" HeightRequest="300" BackgroundColor="AliceBlue"/>
+        <Label Text="Income, Expense, and Yearly Outcome Bar Graph" Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="12" HorizontalOptions="Center"/>
+        <microcharts:ChartView x:Name="lineView" WidthRequest="300" HeightRequest="300"/>
+        <Label Text="Income by Month Line Graph " Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="12" HorizontalOptions="Center"/>
+        <microcharts:ChartView x:Name="donutView" WidthRequest="300" HeightRequest="300"/>
+        <Label Text="Income Category Donut Chart " Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="12" HorizontalOptions="Center"/>
+        <microcharts:ChartView x:Name="pointView" WidthRequest="300" HeightRequest="300"/>
+        <Label Text="Expense by Month Point Chart " Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="12" HorizontalOptions="Center"/>
+        <microcharts:ChartView x:Name="gaugeView" WidthRequest="300" HeightRequest="300"/>
+        <Label Text="Expense Category Gauge Chart " Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="12" HorizontalOptions="Center"/>
+        <microcharts:ChartView x:Name="radarView" WidthRequest="300" HeightRequest="300"/>
+        <Label Text="Income, Expense, and Yearly Outcome Radar Graph" Margin="4,0,0,0" FontFamily="Times" FontAttributes="Italic" FontSize="12" HorizontalOptions="Center"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="End" Margin="5">
+        <Button Text="EMAIL REPORT"
+                Clicked="EMAIL_Clicked"
+                BackgroundColor="LightSkyBlue" FontSize="16" FontFamily="Times" WidthRequest="200" HeightRequest="50" TextColor="DarkBlue"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center" />
+        </StackLayout>
     </StackLayout>
+    </ScrollView>
 </ContentPage>
