@@ -9,7 +9,7 @@
              Title="Register">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
-                     Margin="50"
+                     Margin="20"
                      VerticalOptions="Center"
                      HorizontalOptions="Center">
             <Entry x:Name="txtFirstName" Placeholder="First Name" FontSize="30" FontFamily="Times" WidthRequest="300"/>
